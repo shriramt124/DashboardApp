@@ -8,8 +8,8 @@
     xmlns:views="using:DashboardApp.Views"
     mc:Ignorable="d">
 
-    <Grid>
-        <views:ShellPage/>
+    <Grid x:ConnectionId='2' x:Name="MainGrid">
+        <!-- Content will be set dynamically -->
     </Grid>
     </Window>
 

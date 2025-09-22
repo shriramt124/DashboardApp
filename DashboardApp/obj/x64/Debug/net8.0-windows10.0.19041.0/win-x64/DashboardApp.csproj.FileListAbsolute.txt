@@ -398,3 +398,8 @@ D:\androidprojects\DashboardApp\DashboardApp\obj\x64\Debug\net8.0-windows10.0.19
 D:\androidprojects\DashboardApp\DashboardApp\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\ForensicsHomePage.xbf
 D:\androidprojects\DashboardApp\DashboardApp\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\ForensicsReportsPage.xbf
 D:\androidprojects\DashboardApp\DashboardApp\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DashboardApp.sourcelink.json
+D:\androidprojects\DashboardApp\DashboardApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\SplashScreenPage.xbf
+D:\androidprojects\DashboardApp\DashboardApp\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\SplashScreenPage.g.i.cs
+D:\androidprojects\DashboardApp\DashboardApp\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\SplashScreenPage.g.cs
+D:\androidprojects\DashboardApp\DashboardApp\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\SplashScreenPage.xaml
+D:\androidprojects\DashboardApp\DashboardApp\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\SplashScreenPage.xbf
