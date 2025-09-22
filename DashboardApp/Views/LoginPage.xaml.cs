@@ -1,4 +1,3 @@
-
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using System.Collections.Generic;
@@ -8,7 +7,7 @@ namespace DashboardApp.Views
     public sealed partial class LoginPage : Page
     {
         private bool _isPasswordVisible = false;
-        private readonly Dictionary<string, string> _mockUsers;
+        private Dictionary<string, string> _mockUsers;
 
         public LoginPage()
         {

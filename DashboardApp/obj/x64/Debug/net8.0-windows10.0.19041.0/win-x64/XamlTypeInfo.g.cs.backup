@@ -226,7 +226,7 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[63];
+            _typeNameTable = new string[62];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -278,20 +278,19 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
             _typeNameTable[48] = "DashboardApp.Views.ForensicsHomePage";
             _typeNameTable[49] = "DashboardApp.Views.ForensicsReportsPage";
             _typeNameTable[50] = "DashboardApp.Views.HomePage";
-            _typeNameTable[51] = "DashboardApp.Views.LoginPage";
-            _typeNameTable[52] = "DashboardApp.Views.ShellPage";
-            _typeNameTable[53] = "Microsoft.UI.Xaml.Controls.ProgressRing";
-            _typeNameTable[54] = "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings";
-            _typeNameTable[55] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[56] = "Microsoft.UI.Xaml.Controls.ProgressBar";
-            _typeNameTable[57] = "Microsoft.UI.Xaml.Controls.Primitives.RangeBase";
-            _typeNameTable[58] = "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings";
-            _typeNameTable[59] = "DashboardApp.Views.SplashScreenPage";
-            _typeNameTable[60] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[61] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[62] = "Int32";
+            _typeNameTable[51] = "DashboardApp.Views.ShellPage";
+            _typeNameTable[52] = "Microsoft.UI.Xaml.Controls.ProgressRing";
+            _typeNameTable[53] = "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings";
+            _typeNameTable[54] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[55] = "Microsoft.UI.Xaml.Controls.ProgressBar";
+            _typeNameTable[56] = "Microsoft.UI.Xaml.Controls.Primitives.RangeBase";
+            _typeNameTable[57] = "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings";
+            _typeNameTable[58] = "DashboardApp.Views.SplashScreenPage";
+            _typeNameTable[59] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[60] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[61] = "Int32";
 
-            _typeTable = new global::System.Type[63];
+            _typeTable = new global::System.Type[62];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -343,18 +342,17 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
             _typeTable[48] = typeof(global::DashboardApp.Views.ForensicsHomePage);
             _typeTable[49] = typeof(global::DashboardApp.Views.ForensicsReportsPage);
             _typeTable[50] = typeof(global::DashboardApp.Views.HomePage);
-            _typeTable[51] = typeof(global::DashboardApp.Views.LoginPage);
-            _typeTable[52] = typeof(global::DashboardApp.Views.ShellPage);
-            _typeTable[53] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing);
-            _typeTable[54] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings);
-            _typeTable[55] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[56] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar);
-            _typeTable[57] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.RangeBase);
-            _typeTable[58] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings);
-            _typeTable[59] = typeof(global::DashboardApp.Views.SplashScreenPage);
-            _typeTable[60] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[61] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[62] = typeof(global::System.Int32);
+            _typeTable[51] = typeof(global::DashboardApp.Views.ShellPage);
+            _typeTable[52] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing);
+            _typeTable[53] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings);
+            _typeTable[54] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[55] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar);
+            _typeTable[56] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.RangeBase);
+            _typeTable[57] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings);
+            _typeTable[58] = typeof(global::DashboardApp.Views.SplashScreenPage);
+            _typeTable[59] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[60] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[61] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -421,12 +419,11 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
         private object Activate_48_ForensicsHomePage() { return new global::DashboardApp.Views.ForensicsHomePage(); }
         private object Activate_49_ForensicsReportsPage() { return new global::DashboardApp.Views.ForensicsReportsPage(); }
         private object Activate_50_HomePage() { return new global::DashboardApp.Views.HomePage(); }
-        private object Activate_51_LoginPage() { return new global::DashboardApp.Views.LoginPage(); }
-        private object Activate_52_ShellPage() { return new global::DashboardApp.Views.ShellPage(); }
-        private object Activate_53_ProgressRing() { return new global::Microsoft.UI.Xaml.Controls.ProgressRing(); }
-        private object Activate_56_ProgressBar() { return new global::Microsoft.UI.Xaml.Controls.ProgressBar(); }
-        private object Activate_59_SplashScreenPage() { return new global::DashboardApp.Views.SplashScreenPage(); }
-        private object Activate_60_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_51_ShellPage() { return new global::DashboardApp.Views.ShellPage(); }
+        private object Activate_52_ProgressRing() { return new global::Microsoft.UI.Xaml.Controls.ProgressRing(); }
+        private object Activate_55_ProgressBar() { return new global::Microsoft.UI.Xaml.Controls.ProgressBar(); }
+        private object Activate_58_SplashScreenPage() { return new global::DashboardApp.Views.SplashScreenPage(); }
+        private object Activate_59_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_Color() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.UI.Color).TypeHandle);
         private void StaticInitializer_5_ValueType() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.ValueType).TypeHandle);
@@ -465,15 +462,14 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
         private void StaticInitializer_48_ForensicsHomePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.ForensicsHomePage).TypeHandle);
         private void StaticInitializer_49_ForensicsReportsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.ForensicsReportsPage).TypeHandle);
         private void StaticInitializer_50_HomePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.HomePage).TypeHandle);
-        private void StaticInitializer_51_LoginPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.LoginPage).TypeHandle);
-        private void StaticInitializer_52_ShellPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.ShellPage).TypeHandle);
-        private void StaticInitializer_53_ProgressRing() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing).TypeHandle);
-        private void StaticInitializer_54_ProgressRingTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings).TypeHandle);
-        private void StaticInitializer_56_ProgressBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar).TypeHandle);
-        private void StaticInitializer_58_ProgressBarTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings).TypeHandle);
-        private void StaticInitializer_59_SplashScreenPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.SplashScreenPage).TypeHandle);
-        private void StaticInitializer_60_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_61_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_51_ShellPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.ShellPage).TypeHandle);
+        private void StaticInitializer_52_ProgressRing() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing).TypeHandle);
+        private void StaticInitializer_53_ProgressRingTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings).TypeHandle);
+        private void StaticInitializer_55_ProgressBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar).TypeHandle);
+        private void StaticInitializer_57_ProgressBarTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings).TypeHandle);
+        private void StaticInitializer_58_SplashScreenPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.SplashScreenPage).TypeHandle);
+        private void StaticInitializer_59_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_60_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -487,7 +483,7 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_61_IList(object instance, object item)
+        private void VectorAdd_60_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -866,27 +862,19 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 51:   //  DashboardApp.Views.LoginPage
+            case 51:   //  DashboardApp.Views.ShellPage
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_51_LoginPage;
-                userType.StaticInitializer = StaticInitializer_51_LoginPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 52:   //  DashboardApp.Views.ShellPage
-                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_52_ShellPage;
-                userType.StaticInitializer = StaticInitializer_52_ShellPage;
+                userType.Activator = Activate_51_ShellPage;
+                userType.StaticInitializer = StaticInitializer_51_ShellPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 53:   //  Microsoft.UI.Xaml.Controls.ProgressRing
+            case 52:   //  Microsoft.UI.Xaml.Controls.ProgressRing
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_53_ProgressRing;
-                userType.StaticInitializer = StaticInitializer_53_ProgressRing;
+                userType.Activator = Activate_52_ProgressRing;
+                userType.StaticInitializer = StaticInitializer_52_ProgressRing;
                 userType.AddMemberName("IsActive");
                 userType.AddMemberName("IsIndeterminate");
                 userType.AddMemberName("Maximum");
@@ -896,21 +884,21 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 54:   //  Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings
+            case 53:   //  Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.StaticInitializer = StaticInitializer_54_ProgressRingTemplateSettings;
+                userType.StaticInitializer = StaticInitializer_53_ProgressRingTemplateSettings;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 55:   //  Microsoft.UI.Xaml.DependencyObject
+            case 54:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 56:   //  Microsoft.UI.Xaml.Controls.ProgressBar
+            case 55:   //  Microsoft.UI.Xaml.Controls.ProgressBar
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.RangeBase"));
-                userType.Activator = Activate_56_ProgressBar;
-                userType.StaticInitializer = StaticInitializer_56_ProgressBar;
+                userType.Activator = Activate_55_ProgressBar;
+                userType.StaticInitializer = StaticInitializer_55_ProgressBar;
                 userType.AddMemberName("IsIndeterminate");
                 userType.AddMemberName("ShowError");
                 userType.AddMemberName("ShowPaused");
@@ -918,29 +906,29 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 57:   //  Microsoft.UI.Xaml.Controls.Primitives.RangeBase
+            case 56:   //  Microsoft.UI.Xaml.Controls.Primitives.RangeBase
                 xamlType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 58:   //  Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings
+            case 57:   //  Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.StaticInitializer = StaticInitializer_58_ProgressBarTemplateSettings;
+                userType.StaticInitializer = StaticInitializer_57_ProgressBarTemplateSettings;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 59:   //  DashboardApp.Views.SplashScreenPage
+            case 58:   //  DashboardApp.Views.SplashScreenPage
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_59_SplashScreenPage;
-                userType.StaticInitializer = StaticInitializer_59_SplashScreenPage;
+                userType.Activator = Activate_58_SplashScreenPage;
+                userType.StaticInitializer = StaticInitializer_58_SplashScreenPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 60:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 59:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_60_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_60_TreeViewNode;
+                userType.Activator = Activate_59_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_59_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -952,15 +940,15 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 61:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 60:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_61_IList;
-                userType.CollectionAdd = VectorAdd_61_IList;
+                userType.StaticInitializer = StaticInitializer_60_IList;
+                userType.CollectionAdd = VectorAdd_60_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 62:   //  Int32
+            case 61:   //  Int32
                 xamlType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }

@@ -26,5 +26,6 @@ Views\ForensicsEvidencePage.xbf
 Views\ForensicsHomePage.xbf
 Views\ForensicsReportsPage.xbf
 Views\HomePage.xbf
+Views\LoginPage.xbf
 Views\ShellPage.xbf
 Views\SplashScreenPage.xbf
