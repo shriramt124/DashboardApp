@@ -18,7 +18,7 @@
         </Grid.Background>
 
         <!-- Main Content -->
-        <Grid MaxWidth="400" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid MaxWidth="480" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Border Background="#161B22" 
                     CornerRadius="12" 
                     BorderBrush="#30363D" 
