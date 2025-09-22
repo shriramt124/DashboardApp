@@ -1,4 +1,4 @@
-﻿<Page
+<Page
     x:Class="DashboardApp.Views.ShellPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -16,7 +16,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <controls:GlobalLeftSidebar Grid.Column="0"/>
+        <controls:GlobalLeftSidebar Grid.Column="0" ViewModel="{x:Bind ViewModel}"/>
 
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
