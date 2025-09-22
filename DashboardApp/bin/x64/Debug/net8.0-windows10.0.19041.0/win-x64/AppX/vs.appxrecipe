@@ -30,7 +30,7 @@
     <AppXManifest Include="D:\androidprojects\DashboardApp\DashboardApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-09-22T09:54:43.888</Modified>
+      <Modified>2025-09-22T10:01:11.272</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -40,11 +40,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\androidprojects\DashboardApp\DashboardApp\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>DashboardApp.exe</PackagePath>
-      <Modified>2025-09-22T09:54:42.394</Modified>
+      <Modified>2025-09-22T10:01:10.475</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\androidprojects\DashboardApp\DashboardApp\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DashboardApp.dll">
       <PackagePath>DashboardApp.dll</PackagePath>
-      <Modified>2025-09-22T09:54:42.371</Modified>
+      <Modified>2025-09-22T10:01:10.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.20\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -952,7 +952,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\androidprojects\DashboardApp\DashboardApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-09-22T09:54:43.474</Modified>
+      <Modified>2025-09-22T10:01:10.834</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

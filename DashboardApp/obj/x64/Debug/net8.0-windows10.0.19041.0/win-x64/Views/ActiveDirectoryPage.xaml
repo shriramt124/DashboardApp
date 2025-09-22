@@ -65,7 +65,8 @@
 					<!-- Table Header -->
 					<Grid Padding="20,16">
 						<Grid.ColumnDefinitions>
-							<ColumnDefinition Width="300"/>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="Auto"/>
 							<ColumnDefinition Width="*"/>
 							<ColumnDefinition Width="Auto"/>
 						</Grid.ColumnDefinitions>
@@ -75,9 +76,14 @@
 								   Foreground="#F0F6FC" 
 								   FontSize="18" 
 								   FontWeight="SemiBold"
-								   VerticalAlignment="Center"/>
+								   VerticalAlignment="Center"
+								   Margin="0,0,20,0"/>
 
-						<StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="12">
+						<StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
+							<FontIcon Glyph="&#xE721;" 
+									  Foreground="#7D8590" 
+									  FontSize="16"
+									  VerticalAlignment="Center"/>
 							<ComboBox Background="#0D1117" 
 									  BorderBrush="#30363D" 
 									  Foreground="#F0F6FC"
@@ -90,29 +96,33 @@
 									  PlaceholderText="All Status" 
 									  MinWidth="120"
 									  CornerRadius="6"/>
-							<Button Background="#238636" 
-									Foreground="White" 
-									Padding="12,8" 
-									CornerRadius="6"
-									FontWeight="Medium">
-								<StackPanel Orientation="Horizontal" Spacing="6">
-									<FontIcon Glyph="&#xE72C;" FontSize="14"/>
-									<TextBlock Text="Refresh"/>
-								</StackPanel>
-							</Button>
 						</StackPanel>
+
+						<Button Grid.Column="3" 
+								Background="#238636" 
+								Foreground="White" 
+								Padding="12,8" 
+								CornerRadius="6"
+								FontWeight="Medium">
+							<StackPanel Orientation="Horizontal" Spacing="6">
+								<FontIcon Glyph="&#xE72C;" FontSize="14"/>
+								<TextBlock Text="Refresh"/>
+							</StackPanel>
+						</Button>
 					</Grid>
 
 					<Border BorderBrush="#30363D" BorderThickness="0,1,0,0">
 						<!-- Horizontal Scrollable Table -->
-						<ScrollViewer HorizontalScrollBarVisibility="Auto" 
-									  VerticalScrollBarVisibility="Disabled"
+						<ScrollViewer x:ConnectionId='2' x:Name="DataTableScrollViewer"
+									  HorizontalScrollBarVisibility="Auto" 
+									  VerticalScrollBarVisibility="Auto"
 									  ZoomMode="Disabled"
-									  HorizontalScrollMode="Auto"
-									  VerticalScrollMode="Disabled">
-							<StackPanel MinWidth="800">
+									  HorizontalScrollMode="Enabled"
+									  VerticalScrollMode="Enabled"
+									  MaxHeight="400">
+							<StackPanel MinWidth="1200">
 								<!-- Table Header Row -->
-								<Grid Background="#21262D" Padding="20,12" MinWidth="800">
+								<Grid Background="#21262D" Padding="20,12" MinWidth="1200">
 									<Grid.ColumnDefinitions>
 										<ColumnDefinition Width="80"/>
 										<ColumnDefinition Width="120"/>
@@ -122,6 +132,10 @@
 										<ColumnDefinition Width="120"/>
 										<ColumnDefinition Width="180"/>
 										<ColumnDefinition Width="80"/>
+										<ColumnDefinition Width="120"/>
+										<ColumnDefinition Width="160"/>
+										<ColumnDefinition Width="140"/>
+										<ColumnDefinition Width="100"/>
 									</Grid.ColumnDefinitions>
 
 									<TextBlock Grid.Column="0" Text="Type" Foreground="#7D8590" FontSize="12" FontWeight="Medium"/>
@@ -132,10 +146,14 @@
 									<TextBlock Grid.Column="5" Text="NetBIOS" Foreground="#7D8590" FontSize="12" FontWeight="Medium"/>
 									<TextBlock Grid.Column="6" Text="FQDN" Foreground="#7D8590" FontSize="12" FontWeight="Medium"/>
 									<TextBlock Grid.Column="7" Text="Status" Foreground="#7D8590" FontSize="12" FontWeight="Medium"/>
+									<TextBlock Grid.Column="8" Text="IP Address" Foreground="#7D8590" FontSize="12" FontWeight="Medium"/>
+									<TextBlock Grid.Column="9" Text="Operating System" Foreground="#7D8590" FontSize="12" FontWeight="Medium"/>
+									<TextBlock Grid.Column="10" Text="Last Logon" Foreground="#7D8590" FontSize="12" FontWeight="Medium"/>
+									<TextBlock Grid.Column="11" Text="Roles" Foreground="#7D8590" FontSize="12" FontWeight="Medium"/>
 								</Grid>
 
 								<!-- Table Rows -->
-								<Border BorderBrush="#30363D" BorderThickness="0,1,0,0" Padding="20,16" MinWidth="800">
+								<Border BorderBrush="#30363D" BorderThickness="0,1,0,0" Padding="20,16" MinWidth="1200">
 									<Grid>
 										<Grid.ColumnDefinitions>
 											<ColumnDefinition Width="80"/>
@@ -146,6 +164,10 @@
 											<ColumnDefinition Width="120"/>
 											<ColumnDefinition Width="180"/>
 											<ColumnDefinition Width="80"/>
+											<ColumnDefinition Width="120"/>
+											<ColumnDefinition Width="160"/>
+											<ColumnDefinition Width="140"/>
+											<ColumnDefinition Width="100"/>
 										</Grid.ColumnDefinitions>
 
 										<StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="6">
@@ -165,10 +187,14 @@
 										<Border Grid.Column="7" Background="#238636" CornerRadius="12" Padding="6,4" HorizontalAlignment="Center">
 											<TextBlock Text="●" Foreground="White" FontSize="8"/>
 										</Border>
+										<TextBlock Grid.Column="8" Text="192.168.1.10" Foreground="#F0F6FC" FontSize="13"/>
+										<TextBlock Grid.Column="9" Text="Windows Server 2022" Foreground="#F0F6FC" FontSize="13"/>
+										<TextBlock Grid.Column="10" Text="2024-01-15 14:30" Foreground="#F0F6FC" FontSize="13"/>
+										<TextBlock Grid.Column="11" Text="DC, DNS" Foreground="#F0F6FC" FontSize="13"/>
 									</Grid>
 								</Border>
 
-								<Border BorderBrush="#30363D" BorderThickness="0,1,0,0" Padding="20,16" MinWidth="800">
+								<Border BorderBrush="#30363D" BorderThickness="0,1,0,0" Padding="20,16" MinWidth="1200">
 									<Grid>
 										<Grid.ColumnDefinitions>
 											<ColumnDefinition Width="80"/>
@@ -179,6 +205,10 @@
 											<ColumnDefinition Width="120"/>
 											<ColumnDefinition Width="180"/>
 											<ColumnDefinition Width="80"/>
+											<ColumnDefinition Width="120"/>
+											<ColumnDefinition Width="160"/>
+											<ColumnDefinition Width="140"/>
+											<ColumnDefinition Width="100"/>
 										</Grid.ColumnDefinitions>
 
 										<StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="6">
@@ -198,6 +228,10 @@
 										<Border Grid.Column="7" Background="#238636" CornerRadius="12" Padding="6,4" HorizontalAlignment="Center">
 											<TextBlock Text="●" Foreground="White" FontSize="8"/>
 										</Border>
+										<TextBlock Grid.Column="8" Text="192.168.2.10" Foreground="#F0F6FC" FontSize="13"/>
+										<TextBlock Grid.Column="9" Text="Windows Server 2019" Foreground="#F0F6FC" FontSize="13"/>
+										<TextBlock Grid.Column="10" Text="2024-01-15 12:15" Foreground="#F0F6FC" FontSize="13"/>
+										<TextBlock Grid.Column="11" Text="DC, GC" Foreground="#F0F6FC" FontSize="13"/>
 									</Grid>
 								</Border>
 							</StackPanel>
