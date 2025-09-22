@@ -99,55 +99,71 @@
 
         <!-- Navigation Icons -->
         <StackPanel Grid.Row="1" Spacing="8" Margin="12,20,12,0">
-            <ToggleButton Style="{StaticResource ModernSidebarToggleButtonStyle}" 
+            <ToggleButton x:ConnectionId='12' x:Name="DashboardsButton"
+                          Style="{StaticResource ModernSidebarToggleButtonStyle}" 
                           ToolTipService.ToolTip="Dashboards"
-                          ToolTipService.Placement="Right">
+                          ToolTipService.Placement="Right"
+                                                   >
                 <FontIcon Glyph="&#xE80F;" FontSize="20"/>
             </ToggleButton>
 
-            <ToggleButton Style="{StaticResource ModernSidebarToggleButtonStyle}" 
+            <ToggleButton x:ConnectionId='13' x:Name="DataManagementButton"
+                          Style="{StaticResource ModernSidebarToggleButtonStyle}" 
                           ToolTipService.ToolTip="Data Management"
                           ToolTipService.Placement="Right"
-                          IsChecked="True">
+                          IsChecked="True"
+                                                       >
                 <FontIcon Glyph="&#xE9A5;" FontSize="20"/>
             </ToggleButton>
 
-            <ToggleButton Style="{StaticResource ModernSidebarToggleButtonStyle}" 
+            <ToggleButton x:ConnectionId='14' x:Name="AnalyticsButton"
+                          Style="{StaticResource ModernSidebarToggleButtonStyle}" 
                           ToolTipService.ToolTip="Analytics"
-                          ToolTipService.Placement="Right">
+                          ToolTipService.Placement="Right"
+                                                  >
                 <FontIcon Glyph="&#xE9D9;" FontSize="20"/>
             </ToggleButton>
 
-            <ToggleButton Style="{StaticResource ModernSidebarToggleButtonStyle}" 
+            <ToggleButton x:ConnectionId='15' x:Name="SecurityButton"
+                          Style="{StaticResource ModernSidebarToggleButtonStyle}" 
                           ToolTipService.ToolTip="Security"
-                          ToolTipService.Placement="Right">
+                          ToolTipService.Placement="Right"
+                                                 >
                 <FontIcon Glyph="&#xE72E;" FontSize="20"/>
             </ToggleButton>
 
-            <ToggleButton Style="{StaticResource ModernSidebarToggleButtonStyle}" 
+            <ToggleButton x:ConnectionId='16' x:Name="ReportsButton"
+                          Style="{StaticResource ModernSidebarToggleButtonStyle}" 
                           ToolTipService.ToolTip="Reports"
-                          ToolTipService.Placement="Right">
+                          ToolTipService.Placement="Right"
+                                                >
                 <FontIcon Glyph="&#xE74C;" FontSize="20"/>
             </ToggleButton>
 
-            <ToggleButton Style="{StaticResource ModernSidebarToggleButtonStyle}" 
+            <ToggleButton x:ConnectionId='17' x:Name="ToolsButton"
+                          Style="{StaticResource ModernSidebarToggleButtonStyle}" 
                           ToolTipService.ToolTip="Tools"
-                          ToolTipService.Placement="Right">
+                          ToolTipService.Placement="Right"
+                                              >
                 <FontIcon Glyph="&#xE90F;" FontSize="20"/>
             </ToggleButton>
         </StackPanel>
 
         <!-- Bottom Actions -->
         <StackPanel Grid.Row="2" Spacing="8" Margin="12,0,12,20">
-            <ToggleButton Style="{StaticResource ModernSidebarToggleButtonStyle}" 
+            <ToggleButton x:ConnectionId='10' x:Name="SettingsButton"
+                          Style="{StaticResource ModernSidebarToggleButtonStyle}" 
                           ToolTipService.ToolTip="Settings"
-                          ToolTipService.Placement="Right">
+                          ToolTipService.Placement="Right"
+                                                 >
                 <FontIcon Glyph="&#xE713;" FontSize="20"/>
             </ToggleButton>
 
-            <ToggleButton Style="{StaticResource ModernSidebarToggleButtonStyle}" 
+            <ToggleButton x:ConnectionId='11' x:Name="HelpButton"
+                          Style="{StaticResource ModernSidebarToggleButtonStyle}" 
                           ToolTipService.ToolTip="Help"
-                          ToolTipService.Placement="Right">
+                          ToolTipService.Placement="Right"
+                                             >
                 <FontIcon Glyph="&#xE9CE;" FontSize="20"/>
             </ToggleButton>
         </StackPanel>
