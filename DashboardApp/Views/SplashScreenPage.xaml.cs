@@ -63,10 +63,10 @@ namespace DashboardApp.Views
 
         private void NavigateToMainApp()
         {
-            // Navigate to the main application
+            // Navigate to the login page
             if (this.Frame != null)
             {
-                this.Frame.Navigate(typeof(ShellPage));
+                this.Frame.Navigate(typeof(LoginPage));
             }
         }
     }
