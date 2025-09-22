@@ -1,0 +1,70 @@
+<Application
+    x:Class="DashboardApp.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DashboardApp">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <Color x:Key="BrandPrimaryColor">#25B09B</Color>
+            <Color x:Key="BackgroundColor">#10162B</Color>
+            <Color x:Key="CardBackgroundColor">#171E37</Color>
+            <Color x:Key="TextColorPrimary">#E0E0E0</Color>
+            <Color x:Key="TextColorSecondary">#A0A0A0</Color>
+            <Color x:Key="BorderColor">#2C364D</Color>
+            <Color x:Key="NavbarBackgroundColor">#171E37</Color>
+            <Color x:Key="SidebarBackgroundColor">#171E37</Color>
+            <Color x:Key="HighlightColor">#4A4F61</Color>
+            <Color x:Key="OverlayColor">#343A4F</Color>
+            <SolidColorBrush x:Key="BrandPrimaryBrush" Color="{StaticResource BrandPrimaryColor}"/>
+            <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundColor}"/>
+            <SolidColorBrush x:Key="CardBackgroundBrush" Color="{StaticResource CardBackgroundColor}"/>
+            <SolidColorBrush x:Key="TextColorPrimaryBrush" Color="{StaticResource TextColorPrimary}"/>
+            <SolidColorBrush x:Key="TextColorSecondaryBrush" Color="{StaticResource TextColorSecondary}"/>
+            <SolidColorBrush x:Key="BorderBrush" Color="{StaticResource BorderColor}"/>
+            <SolidColorBrush x:Key="NavbarBackgroundBrush" Color="{StaticResource NavbarBackgroundColor}"/>
+            <SolidColorBrush x:Key="SidebarBackgroundBrush" Color="{StaticResource SidebarBackgroundColor}"/>
+            <SolidColorBrush x:Key="HighlightBrush" Color="{StaticResource HighlightColor}"/>
+            <SolidColorBrush x:Key="OverlayBrush" Color="{StaticResource OverlayColor}"/>
+
+            <Style TargetType="NavigationViewItem">
+                <Setter Property="Foreground" Value="{StaticResource TextColorPrimaryBrush}"/>
+                <Setter Property="Height" Value="48"/>
+            </Style>
+            <Style TargetType="TextBlock" x:Key="BodyTextBlockStyle">
+                <Setter Property="Foreground" Value="{StaticResource TextColorPrimaryBrush}"/>
+            </Style>
+            <Style TargetType="TextBlock" x:Key="SubtleTextBlockStyle" BasedOn="{StaticResource BodyTextBlockStyle}">
+                <Setter Property="Foreground" Value="{StaticResource TextColorSecondaryBrush}"/>
+                <Setter Property="FontSize" Value="12"/>
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="Background" Value="{StaticResource BrandPrimaryBrush}"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="CornerRadius" Value="4"/>
+                <Setter Property="Padding" Value="12,8"/>
+            </Style>
+
+            <Style TargetType="AutoSuggestBox">
+                <Setter Property="Background" Value="{StaticResource CardBackgroundBrush}"/>
+                <Setter Property="Foreground" Value="{StaticResource TextColorPrimaryBrush}"/>
+                <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="CornerRadius" Value="4"/>
+            </Style>
+
+            <Style TargetType="ComboBox">
+                <Setter Property="Background" Value="{StaticResource CardBackgroundBrush}"/>
+                <Setter Property="Foreground" Value="{StaticResource TextColorPrimaryBrush}"/>
+                <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="CornerRadius" Value="4"/>
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

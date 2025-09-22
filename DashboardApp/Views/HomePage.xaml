@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="DashboardApp.Views.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{StaticResource BackgroundBrush}">
+
+	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+		<TextBlock Text="Home Page Content"
+                   Style="{StaticResource BodyTextBlockStyle}"
+                   FontSize="48"/>
+		<TextBlock Text="This is the main content area."
+                   Style="{StaticResource SubtleTextBlockStyle}"
+                   HorizontalAlignment="Center" Margin="0,10,0,0"/>
+	</StackPanel>
+</Page>

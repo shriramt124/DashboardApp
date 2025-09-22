@@ -1,0 +1,184 @@
+﻿<Page
+    x:Class="DashboardApp.Views.ActiveDirectoryPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{StaticResource BackgroundBrush}">
+
+	<Grid Padding="20">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="Auto"/>
+		</Grid.ColumnDefinitions>
+
+		<StackPanel Grid.Column="0" Spacing="20" Margin="0,0,20,0">
+			<StackPanel Orientation="Horizontal" Spacing="10">
+				<FontIcon Glyph="&#xE7F4;" Foreground="{StaticResource BrandPrimaryBrush}" FontSize="24"/>
+				<TextBlock Text="Active Directory Overview"
+                           Style="{StaticResource BodyTextBlockStyle}"
+                           FontSize="24" FontWeight="SemiBold" VerticalAlignment="Center"/>
+			</StackPanel>
+			<TextBlock Text="Recover and restore your Active Directory forest"
+                       Style="{StaticResource SubtleTextBlockStyle}" Margin="34, -10, 0, 0"/>
+
+			<StackPanel Orientation="Horizontal" Spacing="15" HorizontalAlignment="Stretch">
+				<Border Background="{StaticResource CardBackgroundBrush}" CornerRadius="8" Padding="15" MinWidth="250" HorizontalAlignment="Stretch">
+					<StackPanel Spacing="5">
+						<TextBlock Text="1" Foreground="{StaticResource BrandPrimaryBrush}" FontSize="24" FontWeight="Bold"/>
+						<TextBlock Text="Active Directory Forest" Style="{StaticResource BodyTextBlockStyle}"/>
+						<TextBlock Text="in Isolation Environment" Style="{StaticResource SubtleTextBlockStyle}"/>
+					</StackPanel>
+				</Border>
+				<Border Background="{StaticResource CardBackgroundBrush}" CornerRadius="8" Padding="15" MinWidth="250" HorizontalAlignment="Stretch">
+					<StackPanel Spacing="5">
+						<TextBlock Text="3" Foreground="{StaticResource BrandPrimaryBrush}" FontSize="24" FontWeight="Bold"/>
+						<TextBlock Text="Active Directory Domains" Style="{StaticResource BodyTextBlockStyle}"/>
+						<TextBlock Text="Defined in the forest" Style="{StaticResource SubtleTextBlockStyle}"/>
+					</StackPanel>
+				</Border>
+				<Border Background="{StaticResource CardBackgroundBrush}" CornerRadius="8" Padding="15" MinWidth="250" HorizontalAlignment="Stretch">
+					<StackPanel Spacing="5">
+						<TextBlock Text="5" Foreground="{StaticResource BrandPrimaryBrush}" FontSize="24" FontWeight="Bold"/>
+						<TextBlock Text="Domain Controllers" Style="{StaticResource BodyTextBlockStyle}"/>
+						<TextBlock Text="Defined in the forest" Style="{StaticResource SubtleTextBlockStyle}"/>
+					</StackPanel>
+				</Border>
+			</StackPanel>
+
+			<Border Background="{StaticResource CardBackgroundBrush}" CornerRadius="8" Padding="15">
+				<StackPanel Spacing="15">
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="*"/>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="Auto"/>
+						</Grid.ColumnDefinitions>
+
+						<AutoSuggestBox Grid.Column="0" PlaceholderText="Search domain..." QueryIcon="Find" MinWidth="200" Margin="0,0,10,0"/>
+						<TextBlock Grid.Column="1" Text="Domain Controllers" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" FontWeight="SemiBold"/>
+
+						<ComboBox Grid.Column="2" PlaceholderText="All Domains" MinWidth="120" Margin="0,0,10,0"/>
+						<ComboBox Grid.Column="3" PlaceholderText="All Status" MinWidth="120" Margin="0,0,10,0"/>
+						<StackPanel Grid.Column="4" Orientation="Horizontal" Spacing="5">
+							<Button Style="{StaticResource TextBlockButtonStyle}">
+								<FontIcon Glyph="&#xE72C;" Foreground="{StaticResource BrandPrimaryBrush}"/>
+							</Button>
+							<Button Style="{StaticResource TextBlockButtonStyle}">
+								<FontIcon Glyph="&#xE815;" Foreground="{StaticResource BrandPrimaryBrush}"/>
+							</Button>
+						</StackPanel>
+					</Grid>
+
+					<Grid ColumnDefinitions="*,*,*,*,*,*" Margin="0,10,0,0">
+						<Border Grid.Column="0" BorderThickness="0,0,0,1" BorderBrush="{StaticResource BorderBrush}" Padding="5">
+							<TextBlock Text="Type" Style="{StaticResource SubtleTextBlockStyle}"/>
+						</Border>
+						<Border Grid.Column="1" BorderThickness="0,0,0,1" BorderBrush="{StaticResource BorderBrush}" Padding="5">
+							<TextBlock Text="Domain" Style="{StaticResource SubtleTextBlockStyle}"/>
+						</Border>
+						<Border Grid.Column="2" BorderThickness="0,0,0,1" BorderBrush="{StaticResource BorderBrush}" Padding="5">
+							<TextBlock Text="Domain SID" Style="{StaticResource SubtleTextBlockStyle}"/>
+						</Border>
+						<Border Grid.Column="3" BorderThickness="0,0,0,1" BorderBrush="{StaticResource BorderBrush}" Padding="5">
+							<TextBlock Text="Site" Style="{StaticResource SubtleTextBlockStyle}"/>
+						</Border>
+						<Border Grid.Column="4" BorderThickness="0,0,0,1" BorderBrush="{StaticResource BorderBrush}" Padding="5">
+							<TextBlock Text="SAM Account" Style="{StaticResource SubtleTextBlockStyle}"/>
+						</Border>
+						<Border Grid.Column="5" BorderThickness="0,0,0,1" BorderBrush="{StaticResource BorderBrush}" Padding="5">
+							<TextBlock Text="NetBIOS" Style="{StaticResource SubtleTextBlockStyle}"/>
+						</Border>
+					</Grid>
+
+					<Grid ColumnDefinitions="*,*,*,*,*,*" Margin="0,5,0,0">
+						<StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="5">
+							<FontIcon Glyph="&#xE713;" Foreground="{StaticResource TextColorPrimaryBrush}"/>
+							<TextBlock Text="Root" Style="{StaticResource BodyTextBlockStyle}"/>
+						</StackPanel>
+						<StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="5">
+							<FontIcon Glyph="&#xE731;" Foreground="{StaticResource TextColorPrimaryBrush}"/>
+							<TextBlock Text="company.local" Style="{StaticResource BodyTextBlockStyle}"/>
+						</StackPanel>
+						<TextBlock Grid.Column="2" Text="S-1-5-21-237783..." Style="{StaticResource BodyTextBlockStyle}"/>
+						<TextBlock Grid.Column="3" Text="Default-First-Site-Name" Style="{StaticResource BodyTextBlockStyle}"/>
+						<TextBlock Grid.Column="4" Text="DC01" Style="{StaticResource BodyTextBlockStyle}"/>
+						<TextBlock Grid.Column="5" Text="DC01.company.local" Style="{StaticResource BodyTextBlockStyle}"/>
+					</Grid>
+
+					<Grid ColumnDefinitions="*,*,*,*,*,*" Margin="0,5,0,0">
+						<StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="5">
+							<FontIcon Glyph="&#xE713;" Foreground="{StaticResource TextColorPrimaryBrush}"/>
+							<TextBlock Text="Child" Style="{StaticResource BodyTextBlockStyle}"/>
+						</StackPanel>
+						<StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="5">
+							<FontIcon Glyph="&#xE731;" Foreground="{StaticResource TextColorPrimaryBrush}"/>
+							<TextBlock Text="sales.company.local" Style="{StaticResource BodyTextBlockStyle}"/>
+						</StackPanel>
+						<TextBlock Grid.Column="2" Text="S-1-5-21-449556..." Style="{StaticResource BodyTextBlockStyle}"/>
+						<TextBlock Grid.Column="3" Text="Sales-Site" Style="{StaticResource BodyTextBlockStyle}"/>
+						<TextBlock Grid.Column="4" Text="SALLSDC" Style="{StaticResource BodyTextBlockStyle}"/>
+						<TextBlock Grid.Column="5" Text="salsdc.sales.company.local" Style="{StaticResource BodyTextBlockStyle}"/>
+					</Grid>
+
+					<Button Content="Export Data" HorizontalAlignment="Left" Margin="0,20,0,0"/>
+				</StackPanel>
+			</Border>
+		</StackPanel>
+
+		<Border Grid.Column="1" Background="{StaticResource CardBackgroundBrush}" CornerRadius="8" Padding="15" Width="250">
+			<StackPanel Spacing="20">
+				<StackPanel Spacing="10">
+					<TextBlock Text="Dependencies" Style="{StaticResource BodyTextBlockStyle}" FontWeight="SemiBold" FontSize="16"/>
+					<StackPanel Spacing="5">
+						<Grid ColumnDefinitions="*,Auto">
+							<TextBlock Text="DNS Services" Style="{StaticResource SubtleTextBlockStyle}"/>
+							<Ellipse Grid.Column="1" Width="8" Height="8" Fill="{StaticResource BrandPrimaryBrush}"/>
+						</Grid>
+						<Grid ColumnDefinitions="*,Auto">
+							<TextBlock Text="LDAP Connection" Style="{StaticResource SubtleTextBlockStyle}"/>
+							<Ellipse Grid.Column="1" Width="8" Height="8" Fill="{StaticResource BrandPrimaryBrush}"/>
+						</Grid>
+						<Grid ColumnDefinitions="*,Auto">
+							<TextBlock Text="Kerberos Auth" Style="{StaticResource SubtleTextBlockStyle}"/>
+							<Ellipse Grid.Column="1" Width="8" Height="8" Fill="{StaticResource BrandPrimaryBrush}"/>
+						</Grid>
+						<Grid ColumnDefinitions="*,Auto">
+							<TextBlock Text="Replication" Style="{StaticResource SubtleTextBlockStyle}"/>
+							<Ellipse Grid.Column="1" Width="8" Height="8" Fill="{StaticResource BrandPrimaryBrush}"/>
+						</Grid>
+					</StackPanel>
+				</StackPanel>
+
+				<StackPanel Spacing="10">
+					<TextBlock Text="Recent Activity" Style="{StaticResource BodyTextBlockStyle}" FontWeight="SemiBold" FontSize="16"/>
+					<StackPanel Spacing="10">
+						<StackPanel>
+							<TextBlock Text="Domain Controller Updated" Style="{StaticResource BodyTextBlockStyle}" FontSize="13"/>
+							<TextBlock Text="DC01.company.local" Style="{StaticResource SubtleTextBlockStyle}"/>
+							<TextBlock Text="4 min ago" Style="{StaticResource SubtleTextBlockStyle}"/>
+						</StackPanel>
+						<StackPanel>
+							<TextBlock Text="User Group Created" Style="{StaticResource BodyTextBlockStyle}" FontSize="13"/>
+							<TextBlock Text="Sales Users" Style="{StaticResource SubtleTextBlockStyle}"/>
+							<TextBlock Text="10 min ago" Style="{StaticResource SubtleTextBlockStyle}"/>
+						</StackPanel>
+						<StackPanel>
+							<TextBlock Text="Policy Warning" Style="{StaticResource BodyTextBlockStyle}" FontSize="13"/>
+							<TextBlock Text="Password policy" Style="{StaticResource SubtleTextBlockStyle}"/>
+							<TextBlock Text="1 hour ago" Style="{StaticResource SubtleTextBlockStyle}"/>
+						</StackPanel>
+						<StackPanel>
+							<TextBlock Text="Backup Completed" Style="{StaticResource BodyTextBlockStyle}" FontSize="13"/>
+							<TextBlock Text="System state" Style="{StaticResource SubtleTextBlockStyle}"/>
+							<TextBlock Text="2 hours ago" Style="{StaticResource SubtleTextBlockStyle}"/>
+						</StackPanel>
+					</StackPanel>
+				</StackPanel>
+			</StackPanel>
+		</Border>
+	</Grid>
+</Page>
