@@ -1,4 +1,3 @@
-
 <Page
     x:Class="DashboardApp.Views.SplashScreenPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -9,10 +8,7 @@
     Background="#0D1117">
 
     <Grid>
-        <!-- Background overlay -->
-        <Rectangle Fill="#0D1117" Opacity="0.95"/>
-        
-        <!-- Main content -->
+        <!-- Main content centered -->
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="40">
             <!-- App Logo/Icon -->
             <StackPanel HorizontalAlignment="Center" Spacing="16">
@@ -31,7 +27,7 @@
             </StackPanel>
 
             <!-- Loading Progress -->
-            <StackPanel Spacing="24" MinWidth="400">
+            <StackPanel Spacing="20" MinWidth="350">
                 <!-- Progress Bar -->
                 <StackPanel Spacing="8">
                     <Grid>
@@ -54,42 +50,28 @@
                                 CornerRadius="3"/>
                 </StackPanel>
 
-                <!-- Dependencies Status -->
-                <Border Background="#161B22" 
-                        BorderBrush="#30363D" 
-                        BorderThickness="1" 
-                        CornerRadius="8" 
-                        Padding="20">
-                    <StackPanel Spacing="16">
-                        <TextBlock Text="Initializing Dependencies" 
+                <!-- Current Loading Item -->
+                <StackPanel Spacing="12">
+                    <StackPanel x:Name="CurrentLoadingItem" Orientation="Horizontal" Spacing="12" HorizontalAlignment="Center">
+                        <ProgressRing x:Name="CurrentSpinner" 
+                                     Width="16" 
+                                     Height="16" 
+                                     IsActive="True" 
+                                     Foreground="#58A6FF"/>
+                        <TextBlock x:Name="CurrentLoadingText" 
+                                  Text="Starting up..." 
                                   Foreground="#F0F6FC" 
-                                  FontSize="16" 
-                                  FontWeight="SemiBold"/>
-                        
-                        <StackPanel x:Name="DependenciesStack" Spacing="12">
-                            <!-- Dynamic dependency items will be added here -->
-                        </StackPanel>
+                                  FontSize="14"/>
                     </StackPanel>
-                </Border>
-            </StackPanel>
-        </StackPanel>
 
-        <!-- Loading spinner in corner -->
-        <StackPanel Orientation="Horizontal" 
-                   Spacing="8" 
-                   HorizontalAlignment="Right" 
-                   VerticalAlignment="Bottom" 
-                   Margin="24">
-            <ProgressRing x:Name="LoadingSpinner" 
-                         IsActive="True" 
-                         Width="20" 
-                         Height="20" 
-                         Foreground="#58A6FF"/>
-            <TextBlock x:Name="CurrentLoadingText" 
-                      Text="Starting up..." 
-                      Foreground="#7D8590" 
-                      FontSize="12" 
-                      VerticalAlignment="Center"/>
+                    <!-- Completed Dependencies -->
+                    <StackPanel x:Name="CompletedDependencies" Spacing="8" MaxHeight="120">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto" VerticalScrollMode="Auto">
+                            <StackPanel x:Name="CompletedStack" Spacing="6"/>
+                        </ScrollViewer>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>
