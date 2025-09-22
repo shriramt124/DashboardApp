@@ -107,7 +107,7 @@ namespace DashboardApp.Controls
                         textBlock.Foreground = new SolidColorBrush(isActive ?
                             Windows.UI.Color.FromArgb(255, 88, 166, 255) : // #58A6FF
                             Windows.UI.Color.FromArgb(255, 240, 246, 252)); // #F0F6FC
-                        textBlock.FontWeight = isActive ? FontWeights.SemiBold : FontWeights.Normal;
+                        textBlock.FontWeight = isActive ? FontWeight : FontWeight;
                     }
                 }
             }

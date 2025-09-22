@@ -1,0 +1,16 @@
+﻿
+<Page x:Class="DashboardApp.Views.AwsRdsPage" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Background="{StaticResource BackgroundBrush}">
+    <Grid Padding="20">
+        <StackPanel Spacing="20">
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <FontIcon Glyph="&#xE74E;" Foreground="{StaticResource BrandPrimaryBrush}" FontSize="24"/>
+                <TextBlock Text="AWS RDS Databases" Style="{StaticResource BodyTextBlockStyle}" FontSize="24" FontWeight="SemiBold"/>
+            </StackPanel>
+            <TextBlock Text="Manage relational database services" Style="{StaticResource SubtleTextBlockStyle}"/>
+            <Border Background="{StaticResource CardBackgroundBrush}" CornerRadius="8" Padding="40" HorizontalAlignment="Center">
+                <TextBlock Text="RDS Management Coming Soon..." Style="{StaticResource BodyTextBlockStyle}" FontSize="18"/>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>
+

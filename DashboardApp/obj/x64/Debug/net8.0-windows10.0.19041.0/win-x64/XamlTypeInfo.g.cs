@@ -226,7 +226,7 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[35];
+            _typeNameTable = new string[56];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -247,23 +247,44 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
             _typeNameTable[17] = "Microsoft.UI.Xaml.Controls.UserControl";
             _typeNameTable[18] = "Microsoft.UI.Xaml.Controls.DropDownButton";
             _typeNameTable[19] = "Microsoft.UI.Xaml.Controls.Button";
-            _typeNameTable[20] = "Int32";
-            _typeNameTable[21] = "Microsoft.UI.Xaml.Controls.IconSource";
-            _typeNameTable[22] = "Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings";
-            _typeNameTable[23] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[24] = "DashboardApp.Controls.TopNavbar";
-            _typeNameTable[25] = "DashboardApp.ViewModels.ShellViewModel";
-            _typeNameTable[26] = "DashboardApp.ViewModels.BaseViewModel";
-            _typeNameTable[27] = "DashboardApp.Views.ShellPage";
-            _typeNameTable[28] = "Microsoft.UI.Xaml.Controls.Page";
-            _typeNameTable[29] = "DashboardApp.MainWindow";
-            _typeNameTable[30] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[31] = "DashboardApp.Views.ActiveDirectoryPage";
-            _typeNameTable[32] = "DashboardApp.Views.HomePage";
-            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[34] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[20] = "Microsoft.UI.Xaml.Controls.AutoSuggestBox";
+            _typeNameTable[21] = "DashboardApp.Controls.TopNavbar";
+            _typeNameTable[22] = "DashboardApp.ViewModels.ShellViewModel";
+            _typeNameTable[23] = "DashboardApp.ViewModels.BaseViewModel";
+            _typeNameTable[24] = "DashboardApp.Views.ShellPage";
+            _typeNameTable[25] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[26] = "DashboardApp.MainWindow";
+            _typeNameTable[27] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[28] = "DashboardApp.Views.ActiveDirectoryPage";
+            _typeNameTable[29] = "DashboardApp.Views.AdComputersPage";
+            _typeNameTable[30] = "DashboardApp.Views.AdDomainsPage";
+            _typeNameTable[31] = "DashboardApp.Views.AdForestPage";
+            _typeNameTable[32] = "DashboardApp.Views.AdGroupsPage";
+            _typeNameTable[33] = "DashboardApp.Views.AdUsersPage";
+            _typeNameTable[34] = "DashboardApp.Views.AwsEc2Page";
+            _typeNameTable[35] = "DashboardApp.Views.AwsHomePage";
+            _typeNameTable[36] = "DashboardApp.Views.AwsLambdaPage";
+            _typeNameTable[37] = "DashboardApp.Views.AwsRdsPage";
+            _typeNameTable[38] = "DashboardApp.Views.AwsS3Page";
+            _typeNameTable[39] = "DashboardApp.Views.AzureFunctionsPage";
+            _typeNameTable[40] = "DashboardApp.Views.AzureHomePage";
+            _typeNameTable[41] = "DashboardApp.Views.AzureSqlPage";
+            _typeNameTable[42] = "DashboardApp.Views.AzureStoragePage";
+            _typeNameTable[43] = "DashboardApp.Views.AzureVmsPage";
+            _typeNameTable[44] = "DashboardApp.Views.DashboardAnalyticsPage";
+            _typeNameTable[45] = "DashboardApp.Views.DashboardOverviewPage";
+            _typeNameTable[46] = "DashboardApp.Views.ForensicsAnalysisPage";
+            _typeNameTable[47] = "DashboardApp.Views.ForensicsCasesPage";
+            _typeNameTable[48] = "DashboardApp.Views.ForensicsEvidencePage";
+            _typeNameTable[49] = "DashboardApp.Views.ForensicsHomePage";
+            _typeNameTable[50] = "DashboardApp.Views.ForensicsReportsPage";
+            _typeNameTable[51] = "DashboardApp.Views.HomePage";
+            _typeNameTable[52] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[53] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[54] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[55] = "Int32";
 
-            _typeTable = new global::System.Type[35];
+            _typeTable = new global::System.Type[56];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -284,21 +305,42 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
             _typeTable[17] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
             _typeTable[18] = typeof(global::Microsoft.UI.Xaml.Controls.DropDownButton);
             _typeTable[19] = typeof(global::Microsoft.UI.Xaml.Controls.Button);
-            _typeTable[20] = typeof(global::System.Int32);
-            _typeTable[21] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
-            _typeTable[22] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings);
-            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[24] = typeof(global::DashboardApp.Controls.TopNavbar);
-            _typeTable[25] = typeof(global::DashboardApp.ViewModels.ShellViewModel);
-            _typeTable[26] = typeof(global::DashboardApp.ViewModels.BaseViewModel);
-            _typeTable[27] = typeof(global::DashboardApp.Views.ShellPage);
-            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
-            _typeTable[29] = typeof(global::DashboardApp.MainWindow);
-            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[31] = typeof(global::DashboardApp.Views.ActiveDirectoryPage);
-            _typeTable[32] = typeof(global::DashboardApp.Views.HomePage);
-            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[34] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[20] = typeof(global::Microsoft.UI.Xaml.Controls.AutoSuggestBox);
+            _typeTable[21] = typeof(global::DashboardApp.Controls.TopNavbar);
+            _typeTable[22] = typeof(global::DashboardApp.ViewModels.ShellViewModel);
+            _typeTable[23] = typeof(global::DashboardApp.ViewModels.BaseViewModel);
+            _typeTable[24] = typeof(global::DashboardApp.Views.ShellPage);
+            _typeTable[25] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[26] = typeof(global::DashboardApp.MainWindow);
+            _typeTable[27] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[28] = typeof(global::DashboardApp.Views.ActiveDirectoryPage);
+            _typeTable[29] = typeof(global::DashboardApp.Views.AdComputersPage);
+            _typeTable[30] = typeof(global::DashboardApp.Views.AdDomainsPage);
+            _typeTable[31] = typeof(global::DashboardApp.Views.AdForestPage);
+            _typeTable[32] = typeof(global::DashboardApp.Views.AdGroupsPage);
+            _typeTable[33] = typeof(global::DashboardApp.Views.AdUsersPage);
+            _typeTable[34] = typeof(global::DashboardApp.Views.AwsEc2Page);
+            _typeTable[35] = typeof(global::DashboardApp.Views.AwsHomePage);
+            _typeTable[36] = typeof(global::DashboardApp.Views.AwsLambdaPage);
+            _typeTable[37] = typeof(global::DashboardApp.Views.AwsRdsPage);
+            _typeTable[38] = typeof(global::DashboardApp.Views.AwsS3Page);
+            _typeTable[39] = typeof(global::DashboardApp.Views.AzureFunctionsPage);
+            _typeTable[40] = typeof(global::DashboardApp.Views.AzureHomePage);
+            _typeTable[41] = typeof(global::DashboardApp.Views.AzureSqlPage);
+            _typeTable[42] = typeof(global::DashboardApp.Views.AzureStoragePage);
+            _typeTable[43] = typeof(global::DashboardApp.Views.AzureVmsPage);
+            _typeTable[44] = typeof(global::DashboardApp.Views.DashboardAnalyticsPage);
+            _typeTable[45] = typeof(global::DashboardApp.Views.DashboardOverviewPage);
+            _typeTable[46] = typeof(global::DashboardApp.Views.ForensicsAnalysisPage);
+            _typeTable[47] = typeof(global::DashboardApp.Views.ForensicsCasesPage);
+            _typeTable[48] = typeof(global::DashboardApp.Views.ForensicsEvidencePage);
+            _typeTable[49] = typeof(global::DashboardApp.Views.ForensicsHomePage);
+            _typeTable[50] = typeof(global::DashboardApp.Views.ForensicsReportsPage);
+            _typeTable[51] = typeof(global::DashboardApp.Views.HomePage);
+            _typeTable[52] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[53] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[54] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[55] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -338,14 +380,35 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
         private object Activate_12_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
         private object Activate_16_GlobalLeftSidebar() { return new global::DashboardApp.Controls.GlobalLeftSidebar(); }
         private object Activate_18_DropDownButton() { return new global::Microsoft.UI.Xaml.Controls.DropDownButton(); }
-        private object Activate_22_InfoBadgeTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings(); }
-        private object Activate_24_TopNavbar() { return new global::DashboardApp.Controls.TopNavbar(); }
-        private object Activate_25_ShellViewModel() { return new global::DashboardApp.ViewModels.ShellViewModel(); }
-        private object Activate_27_ShellPage() { return new global::DashboardApp.Views.ShellPage(); }
-        private object Activate_29_MainWindow() { return new global::DashboardApp.MainWindow(); }
-        private object Activate_31_ActiveDirectoryPage() { return new global::DashboardApp.Views.ActiveDirectoryPage(); }
-        private object Activate_32_HomePage() { return new global::DashboardApp.Views.HomePage(); }
-        private object Activate_33_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_21_TopNavbar() { return new global::DashboardApp.Controls.TopNavbar(); }
+        private object Activate_22_ShellViewModel() { return new global::DashboardApp.ViewModels.ShellViewModel(); }
+        private object Activate_24_ShellPage() { return new global::DashboardApp.Views.ShellPage(); }
+        private object Activate_26_MainWindow() { return new global::DashboardApp.MainWindow(); }
+        private object Activate_28_ActiveDirectoryPage() { return new global::DashboardApp.Views.ActiveDirectoryPage(); }
+        private object Activate_29_AdComputersPage() { return new global::DashboardApp.Views.AdComputersPage(); }
+        private object Activate_30_AdDomainsPage() { return new global::DashboardApp.Views.AdDomainsPage(); }
+        private object Activate_31_AdForestPage() { return new global::DashboardApp.Views.AdForestPage(); }
+        private object Activate_32_AdGroupsPage() { return new global::DashboardApp.Views.AdGroupsPage(); }
+        private object Activate_33_AdUsersPage() { return new global::DashboardApp.Views.AdUsersPage(); }
+        private object Activate_34_AwsEc2Page() { return new global::DashboardApp.Views.AwsEc2Page(); }
+        private object Activate_35_AwsHomePage() { return new global::DashboardApp.Views.AwsHomePage(); }
+        private object Activate_36_AwsLambdaPage() { return new global::DashboardApp.Views.AwsLambdaPage(); }
+        private object Activate_37_AwsRdsPage() { return new global::DashboardApp.Views.AwsRdsPage(); }
+        private object Activate_38_AwsS3Page() { return new global::DashboardApp.Views.AwsS3Page(); }
+        private object Activate_39_AzureFunctionsPage() { return new global::DashboardApp.Views.AzureFunctionsPage(); }
+        private object Activate_40_AzureHomePage() { return new global::DashboardApp.Views.AzureHomePage(); }
+        private object Activate_41_AzureSqlPage() { return new global::DashboardApp.Views.AzureSqlPage(); }
+        private object Activate_42_AzureStoragePage() { return new global::DashboardApp.Views.AzureStoragePage(); }
+        private object Activate_43_AzureVmsPage() { return new global::DashboardApp.Views.AzureVmsPage(); }
+        private object Activate_44_DashboardAnalyticsPage() { return new global::DashboardApp.Views.DashboardAnalyticsPage(); }
+        private object Activate_45_DashboardOverviewPage() { return new global::DashboardApp.Views.DashboardOverviewPage(); }
+        private object Activate_46_ForensicsAnalysisPage() { return new global::DashboardApp.Views.ForensicsAnalysisPage(); }
+        private object Activate_47_ForensicsCasesPage() { return new global::DashboardApp.Views.ForensicsCasesPage(); }
+        private object Activate_48_ForensicsEvidencePage() { return new global::DashboardApp.Views.ForensicsEvidencePage(); }
+        private object Activate_49_ForensicsHomePage() { return new global::DashboardApp.Views.ForensicsHomePage(); }
+        private object Activate_50_ForensicsReportsPage() { return new global::DashboardApp.Views.ForensicsReportsPage(); }
+        private object Activate_51_HomePage() { return new global::DashboardApp.Views.HomePage(); }
+        private object Activate_52_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_Color() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.UI.Color).TypeHandle);
         private void StaticInitializer_5_ValueType() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.ValueType).TypeHandle);
@@ -356,16 +419,37 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
         private void StaticInitializer_14_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::System.Object>).TypeHandle);
         private void StaticInitializer_16_GlobalLeftSidebar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Controls.GlobalLeftSidebar).TypeHandle);
         private void StaticInitializer_18_DropDownButton() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.DropDownButton).TypeHandle);
-        private void StaticInitializer_22_InfoBadgeTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings).TypeHandle);
-        private void StaticInitializer_24_TopNavbar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Controls.TopNavbar).TypeHandle);
-        private void StaticInitializer_25_ShellViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.ViewModels.ShellViewModel).TypeHandle);
-        private void StaticInitializer_26_BaseViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.ViewModels.BaseViewModel).TypeHandle);
-        private void StaticInitializer_27_ShellPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.ShellPage).TypeHandle);
-        private void StaticInitializer_29_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.MainWindow).TypeHandle);
-        private void StaticInitializer_31_ActiveDirectoryPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.ActiveDirectoryPage).TypeHandle);
-        private void StaticInitializer_32_HomePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.HomePage).TypeHandle);
-        private void StaticInitializer_33_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_34_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_21_TopNavbar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Controls.TopNavbar).TypeHandle);
+        private void StaticInitializer_22_ShellViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.ViewModels.ShellViewModel).TypeHandle);
+        private void StaticInitializer_23_BaseViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.ViewModels.BaseViewModel).TypeHandle);
+        private void StaticInitializer_24_ShellPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.ShellPage).TypeHandle);
+        private void StaticInitializer_26_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.MainWindow).TypeHandle);
+        private void StaticInitializer_28_ActiveDirectoryPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.ActiveDirectoryPage).TypeHandle);
+        private void StaticInitializer_29_AdComputersPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.AdComputersPage).TypeHandle);
+        private void StaticInitializer_30_AdDomainsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.AdDomainsPage).TypeHandle);
+        private void StaticInitializer_31_AdForestPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.AdForestPage).TypeHandle);
+        private void StaticInitializer_32_AdGroupsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.AdGroupsPage).TypeHandle);
+        private void StaticInitializer_33_AdUsersPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.AdUsersPage).TypeHandle);
+        private void StaticInitializer_34_AwsEc2Page() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.AwsEc2Page).TypeHandle);
+        private void StaticInitializer_35_AwsHomePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.AwsHomePage).TypeHandle);
+        private void StaticInitializer_36_AwsLambdaPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.AwsLambdaPage).TypeHandle);
+        private void StaticInitializer_37_AwsRdsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.AwsRdsPage).TypeHandle);
+        private void StaticInitializer_38_AwsS3Page() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.AwsS3Page).TypeHandle);
+        private void StaticInitializer_39_AzureFunctionsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.AzureFunctionsPage).TypeHandle);
+        private void StaticInitializer_40_AzureHomePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.AzureHomePage).TypeHandle);
+        private void StaticInitializer_41_AzureSqlPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.AzureSqlPage).TypeHandle);
+        private void StaticInitializer_42_AzureStoragePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.AzureStoragePage).TypeHandle);
+        private void StaticInitializer_43_AzureVmsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.AzureVmsPage).TypeHandle);
+        private void StaticInitializer_44_DashboardAnalyticsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.DashboardAnalyticsPage).TypeHandle);
+        private void StaticInitializer_45_DashboardOverviewPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.DashboardOverviewPage).TypeHandle);
+        private void StaticInitializer_46_ForensicsAnalysisPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.ForensicsAnalysisPage).TypeHandle);
+        private void StaticInitializer_47_ForensicsCasesPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.ForensicsCasesPage).TypeHandle);
+        private void StaticInitializer_48_ForensicsEvidencePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.ForensicsEvidencePage).TypeHandle);
+        private void StaticInitializer_49_ForensicsHomePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.ForensicsHomePage).TypeHandle);
+        private void StaticInitializer_50_ForensicsReportsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.ForensicsReportsPage).TypeHandle);
+        private void StaticInitializer_51_HomePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::DashboardApp.Views.HomePage).TypeHandle);
+        private void StaticInitializer_52_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_54_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -379,7 +463,7 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_34_IList(object instance, object item)
+        private void VectorAdd_54_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -477,11 +561,8 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
 
             case 12:   //  Microsoft.UI.Xaml.Controls.InfoBadge
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_12_InfoBadge;
                 userType.StaticInitializer = StaticInitializer_12_InfoBadge;
-                userType.AddMemberName("Value");
-                userType.AddMemberName("IconSource");
-                userType.AddMemberName("TemplateSettings");
+                userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
@@ -524,94 +605,255 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
                 xamlType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 20:   //  Int32
+            case 20:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
                 xamlType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 21:   //  Microsoft.UI.Xaml.Controls.IconSource
-                xamlType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 22:   //  Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings
-                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.StaticInitializer = StaticInitializer_22_InfoBadgeTemplateSettings;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 23:   //  Microsoft.UI.Xaml.DependencyObject
-                xamlType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 24:   //  DashboardApp.Controls.TopNavbar
+            case 21:   //  DashboardApp.Controls.TopNavbar
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_24_TopNavbar;
-                userType.StaticInitializer = StaticInitializer_24_TopNavbar;
+                userType.Activator = Activate_21_TopNavbar;
+                userType.StaticInitializer = StaticInitializer_21_TopNavbar;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 25:   //  DashboardApp.ViewModels.ShellViewModel
+            case 22:   //  DashboardApp.ViewModels.ShellViewModel
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DashboardApp.ViewModels.BaseViewModel"));
-                userType.StaticInitializer = StaticInitializer_25_ShellViewModel;
+                userType.StaticInitializer = StaticInitializer_22_ShellViewModel;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 26:   //  DashboardApp.ViewModels.BaseViewModel
+            case 23:   //  DashboardApp.ViewModels.BaseViewModel
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_26_BaseViewModel;
+                userType.StaticInitializer = StaticInitializer_23_BaseViewModel;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 27:   //  DashboardApp.Views.ShellPage
+            case 24:   //  DashboardApp.Views.ShellPage
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_27_ShellPage;
-                userType.StaticInitializer = StaticInitializer_27_ShellPage;
+                userType.Activator = Activate_24_ShellPage;
+                userType.StaticInitializer = StaticInitializer_24_ShellPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 28:   //  Microsoft.UI.Xaml.Controls.Page
+            case 25:   //  Microsoft.UI.Xaml.Controls.Page
                 xamlType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 29:   //  DashboardApp.MainWindow
+            case 26:   //  DashboardApp.MainWindow
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_29_MainWindow;
-                userType.StaticInitializer = StaticInitializer_29_MainWindow;
+                userType.Activator = Activate_26_MainWindow;
+                userType.StaticInitializer = StaticInitializer_26_MainWindow;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 30:   //  Microsoft.UI.Xaml.Window
+            case 27:   //  Microsoft.UI.Xaml.Window
                 xamlType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 31:   //  DashboardApp.Views.ActiveDirectoryPage
+            case 28:   //  DashboardApp.Views.ActiveDirectoryPage
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_31_ActiveDirectoryPage;
-                userType.StaticInitializer = StaticInitializer_31_ActiveDirectoryPage;
+                userType.Activator = Activate_28_ActiveDirectoryPage;
+                userType.StaticInitializer = StaticInitializer_28_ActiveDirectoryPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 32:   //  DashboardApp.Views.HomePage
+            case 29:   //  DashboardApp.Views.AdComputersPage
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_32_HomePage;
-                userType.StaticInitializer = StaticInitializer_32_HomePage;
+                userType.Activator = Activate_29_AdComputersPage;
+                userType.StaticInitializer = StaticInitializer_29_AdComputersPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 33:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 30:   //  DashboardApp.Views.AdDomainsPage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_30_AdDomainsPage;
+                userType.StaticInitializer = StaticInitializer_30_AdDomainsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 31:   //  DashboardApp.Views.AdForestPage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_31_AdForestPage;
+                userType.StaticInitializer = StaticInitializer_31_AdForestPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 32:   //  DashboardApp.Views.AdGroupsPage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_32_AdGroupsPage;
+                userType.StaticInitializer = StaticInitializer_32_AdGroupsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 33:   //  DashboardApp.Views.AdUsersPage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_33_AdUsersPage;
+                userType.StaticInitializer = StaticInitializer_33_AdUsersPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 34:   //  DashboardApp.Views.AwsEc2Page
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_34_AwsEc2Page;
+                userType.StaticInitializer = StaticInitializer_34_AwsEc2Page;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 35:   //  DashboardApp.Views.AwsHomePage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_35_AwsHomePage;
+                userType.StaticInitializer = StaticInitializer_35_AwsHomePage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 36:   //  DashboardApp.Views.AwsLambdaPage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_36_AwsLambdaPage;
+                userType.StaticInitializer = StaticInitializer_36_AwsLambdaPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 37:   //  DashboardApp.Views.AwsRdsPage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_37_AwsRdsPage;
+                userType.StaticInitializer = StaticInitializer_37_AwsRdsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 38:   //  DashboardApp.Views.AwsS3Page
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_38_AwsS3Page;
+                userType.StaticInitializer = StaticInitializer_38_AwsS3Page;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 39:   //  DashboardApp.Views.AzureFunctionsPage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_39_AzureFunctionsPage;
+                userType.StaticInitializer = StaticInitializer_39_AzureFunctionsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 40:   //  DashboardApp.Views.AzureHomePage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_40_AzureHomePage;
+                userType.StaticInitializer = StaticInitializer_40_AzureHomePage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 41:   //  DashboardApp.Views.AzureSqlPage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_41_AzureSqlPage;
+                userType.StaticInitializer = StaticInitializer_41_AzureSqlPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 42:   //  DashboardApp.Views.AzureStoragePage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_42_AzureStoragePage;
+                userType.StaticInitializer = StaticInitializer_42_AzureStoragePage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 43:   //  DashboardApp.Views.AzureVmsPage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_43_AzureVmsPage;
+                userType.StaticInitializer = StaticInitializer_43_AzureVmsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 44:   //  DashboardApp.Views.DashboardAnalyticsPage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_44_DashboardAnalyticsPage;
+                userType.StaticInitializer = StaticInitializer_44_DashboardAnalyticsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 45:   //  DashboardApp.Views.DashboardOverviewPage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_45_DashboardOverviewPage;
+                userType.StaticInitializer = StaticInitializer_45_DashboardOverviewPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 46:   //  DashboardApp.Views.ForensicsAnalysisPage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_46_ForensicsAnalysisPage;
+                userType.StaticInitializer = StaticInitializer_46_ForensicsAnalysisPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 47:   //  DashboardApp.Views.ForensicsCasesPage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_47_ForensicsCasesPage;
+                userType.StaticInitializer = StaticInitializer_47_ForensicsCasesPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 48:   //  DashboardApp.Views.ForensicsEvidencePage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_48_ForensicsEvidencePage;
+                userType.StaticInitializer = StaticInitializer_48_ForensicsEvidencePage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 49:   //  DashboardApp.Views.ForensicsHomePage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_49_ForensicsHomePage;
+                userType.StaticInitializer = StaticInitializer_49_ForensicsHomePage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 50:   //  DashboardApp.Views.ForensicsReportsPage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_50_ForensicsReportsPage;
+                userType.StaticInitializer = StaticInitializer_50_ForensicsReportsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 51:   //  DashboardApp.Views.HomePage
+                userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_51_HomePage;
+                userType.StaticInitializer = StaticInitializer_51_HomePage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 52:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_33_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_33_TreeViewNode;
+                userType.Activator = Activate_52_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_52_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -623,12 +865,20 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 34:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 53:   //  Microsoft.UI.Xaml.DependencyObject
+                xamlType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 54:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_34_IList;
-                userType.CollectionAdd = VectorAdd_34_IList;
+                userType.StaticInitializer = StaticInitializer_54_IList;
+                userType.CollectionAdd = VectorAdd_54_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
+                break;
+
+            case 55:   //  Int32
+                xamlType = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
             return xamlType;
@@ -829,92 +1079,67 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase)instance;
             that.IsSelected = (global::System.Boolean)Value;
         }
-        private object get_15_InfoBadge_Value(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBadge)instance;
-            return that.Value;
-        }
-        private void set_15_InfoBadge_Value(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBadge)instance;
-            that.Value = (global::System.Int32)Value;
-        }
-        private object get_16_InfoBadge_IconSource(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBadge)instance;
-            return that.IconSource;
-        }
-        private void set_16_InfoBadge_IconSource(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBadge)instance;
-            that.IconSource = (global::Microsoft.UI.Xaml.Controls.IconSource)Value;
-        }
-        private object get_17_InfoBadge_TemplateSettings(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBadge)instance;
-            return that.TemplateSettings;
-        }
-        private object get_18_TopNavbar_ViewModel(object instance)
+        private object get_15_TopNavbar_ViewModel(object instance)
         {
             var that = (global::DashboardApp.Controls.TopNavbar)instance;
             return that.ViewModel;
         }
-        private void set_18_TopNavbar_ViewModel(object instance, object Value)
+        private void set_15_TopNavbar_ViewModel(object instance, object Value)
         {
             var that = (global::DashboardApp.Controls.TopNavbar)instance;
             that.ViewModel = (global::DashboardApp.ViewModels.ShellViewModel)Value;
         }
-        private object get_19_ShellPage_ViewModel(object instance)
+        private object get_16_ShellPage_ViewModel(object instance)
         {
             var that = (global::DashboardApp.Views.ShellPage)instance;
             return that.ViewModel;
         }
-        private object get_20_TreeViewNode_Children(object instance)
+        private object get_17_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_21_TreeViewNode_Content(object instance)
+        private object get_18_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_21_TreeViewNode_Content(object instance, object Value)
+        private void set_18_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_22_TreeViewNode_Depth(object instance)
+        private object get_19_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_23_TreeViewNode_HasChildren(object instance)
+        private object get_20_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_24_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_21_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_24_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_21_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_25_TreeViewNode_IsExpanded(object instance)
+        private object get_22_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_25_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_22_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_26_TreeViewNode_Parent(object instance)
+        private object get_23_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -1028,83 +1253,62 @@ namespace DashboardApp.DashboardApp_XamlTypeInfo
                 xamlMember.Getter = get_14_NavigationViewItemBase_IsSelected;
                 xamlMember.Setter = set_14_NavigationViewItemBase_IsSelected;
                 break;
-            case "Microsoft.UI.Xaml.Controls.InfoBadge.Value":
-                userType = (global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBadge");
-                xamlMember = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlMember(this, "Value", "Int32");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_InfoBadge_Value;
-                xamlMember.Setter = set_15_InfoBadge_Value;
-                break;
-            case "Microsoft.UI.Xaml.Controls.InfoBadge.IconSource":
-                userType = (global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBadge");
-                xamlMember = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlMember(this, "IconSource", "Microsoft.UI.Xaml.Controls.IconSource");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_16_InfoBadge_IconSource;
-                xamlMember.Setter = set_16_InfoBadge_IconSource;
-                break;
-            case "Microsoft.UI.Xaml.Controls.InfoBadge.TemplateSettings":
-                userType = (global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBadge");
-                xamlMember = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_17_InfoBadge_TemplateSettings;
-                xamlMember.SetIsReadOnly();
-                break;
             case "DashboardApp.Controls.TopNavbar.ViewModel":
                 userType = (global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DashboardApp.Controls.TopNavbar");
                 xamlMember = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlMember(this, "ViewModel", "DashboardApp.ViewModels.ShellViewModel");
-                xamlMember.Getter = get_18_TopNavbar_ViewModel;
-                xamlMember.Setter = set_18_TopNavbar_ViewModel;
+                xamlMember.Getter = get_15_TopNavbar_ViewModel;
+                xamlMember.Setter = set_15_TopNavbar_ViewModel;
                 break;
             case "DashboardApp.Views.ShellPage.ViewModel":
                 userType = (global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DashboardApp.Views.ShellPage");
                 xamlMember = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlMember(this, "ViewModel", "DashboardApp.ViewModels.ShellViewModel");
-                xamlMember.Getter = get_19_ShellPage_ViewModel;
+                xamlMember.Getter = get_16_ShellPage_ViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_20_TreeViewNode_Children;
+                xamlMember.Getter = get_17_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_TreeViewNode_Content;
-                xamlMember.Setter = set_21_TreeViewNode_Content;
+                xamlMember.Getter = get_18_TreeViewNode_Content;
+                xamlMember.Setter = set_18_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_TreeViewNode_Depth;
+                xamlMember.Getter = get_19_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_23_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_20_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_24_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_24_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_21_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_21_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_25_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_25_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_22_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_22_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::DashboardApp.DashboardApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::DashboardApp.DashboardApp_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_26_TreeViewNode_Parent;
+                xamlMember.Getter = get_23_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

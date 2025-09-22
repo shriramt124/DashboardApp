@@ -1,0 +1,131 @@
+﻿
+<Page
+    x:Class="DashboardApp.Views.DashboardOverviewPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{StaticResource BackgroundBrush}">
+
+	<Grid Padding="20">
+		<StackPanel Spacing="20">
+			<StackPanel Orientation="Horizontal" Spacing="10">
+				<FontIcon Glyph="&#xE7C3;" Foreground="{StaticResource BrandPrimaryBrush}" FontSize="24"/>
+				<TextBlock Text="Dashboard Overview"
+                           Style="{StaticResource BodyTextBlockStyle}"
+                           FontSize="24" FontWeight="SemiBold" VerticalAlignment="Center"/>
+			</StackPanel>
+
+			<TextBlock Text="System-wide overview and monitoring dashboard"
+                       Style="{StaticResource SubtleTextBlockStyle}" Margin="34, -10, 0, 0"/>
+
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+
+				<Border Grid.Column="0" Background="{StaticResource CardBackgroundBrush}" CornerRadius="8" Padding="20" Margin="5">
+					<StackPanel Spacing="10">
+						<TextBlock Text="125" Foreground="{StaticResource BrandPrimaryBrush}" FontSize="32" FontWeight="Bold"/>
+						<TextBlock Text="Total Services" Style="{StaticResource BodyTextBlockStyle}"/>
+						<TextBlock Text="↑ 12% from last month" Style="{StaticResource SubtleTextBlockStyle}" Foreground="Green"/>
+					</StackPanel>
+				</Border>
+
+				<Border Grid.Column="1" Background="{StaticResource CardBackgroundBrush}" CornerRadius="8" Padding="20" Margin="5">
+					<StackPanel Spacing="10">
+						<TextBlock Text="98.5%" Foreground="{StaticResource BrandPrimaryBrush}" FontSize="32" FontWeight="Bold"/>
+						<TextBlock Text="Uptime" Style="{StaticResource BodyTextBlockStyle}"/>
+						<TextBlock Text="↑ 0.2% improvement" Style="{StaticResource SubtleTextBlockStyle}" Foreground="Green"/>
+					</StackPanel>
+				</Border>
+
+				<Border Grid.Column="2" Background="{StaticResource CardBackgroundBrush}" CornerRadius="8" Padding="20" Margin="5">
+					<StackPanel Spacing="10">
+						<TextBlock Text="2.3K" Foreground="{StaticResource BrandPrimaryBrush}" FontSize="32" FontWeight="Bold"/>
+						<TextBlock Text="Active Users" Style="{StaticResource BodyTextBlockStyle}"/>
+						<TextBlock Text="↑ 5% increase" Style="{StaticResource SubtleTextBlockStyle}" Foreground="Green"/>
+					</StackPanel>
+				</Border>
+
+				<Border Grid.Column="3" Background="{StaticResource CardBackgroundBrush}" CornerRadius="8" Padding="20" Margin="5">
+					<StackPanel Spacing="10">
+						<TextBlock Text="45GB" Foreground="{StaticResource BrandPrimaryBrush}" FontSize="32" FontWeight="Bold"/>
+						<TextBlock Text="Storage Used" Style="{StaticResource BodyTextBlockStyle}"/>
+						<TextBlock Text="↑ 8% from last week" Style="{StaticResource SubtleTextBlockStyle}" Foreground="Orange"/>
+					</StackPanel>
+				</Border>
+			</Grid>
+
+			<Border Background="{StaticResource CardBackgroundBrush}" CornerRadius="8" Padding="20">
+				<StackPanel Spacing="15">
+					<TextBlock Text="System Health" Style="{StaticResource BodyTextBlockStyle}" FontWeight="SemiBold" FontSize="18"/>
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*"/>
+							<ColumnDefinition Width="*"/>
+							<ColumnDefinition Width="*"/>
+						</Grid.ColumnDefinitions>
+
+						<StackPanel Grid.Column="0" Spacing="10">
+							<TextBlock Text="Infrastructure" Style="{StaticResource BodyTextBlockStyle}" FontWeight="SemiBold"/>
+							<Grid ColumnDefinitions="*,Auto">
+								<TextBlock Text="Active Directory" Style="{StaticResource SubtleTextBlockStyle}"/>
+								<Ellipse Grid.Column="1" Width="10" Height="10" Fill="Green"/>
+							</Grid>
+							<Grid ColumnDefinitions="*,Auto">
+								<TextBlock Text="DNS Services" Style="{StaticResource SubtleTextBlockStyle}"/>
+								<Ellipse Grid.Column="1" Width="10" Height="10" Fill="Green"/>
+							</Grid>
+							<Grid ColumnDefinitions="*,Auto">
+								<TextBlock Text="File Servers" Style="{StaticResource SubtleTextBlockStyle}"/>
+								<Ellipse Grid.Column="1" Width="10" Height="10" Fill="Orange"/>
+							</Grid>
+						</StackPanel>
+
+						<StackPanel Grid.Column="1" Spacing="10">
+							<TextBlock Text="Cloud Services" Style="{StaticResource BodyTextBlockStyle}" FontWeight="SemiBold"/>
+							<Grid ColumnDefinitions="*,Auto">
+								<TextBlock Text="AWS EC2" Style="{StaticResource SubtleTextBlockStyle}"/>
+								<Ellipse Grid.Column="1" Width="10" Height="10" Fill="Green"/>
+							</Grid>
+							<Grid ColumnDefinitions="*,Auto">
+								<TextBlock Text="Azure VMs" Style="{StaticResource SubtleTextBlockStyle}"/>
+								<Ellipse Grid.Column="1" Width="10" Height="10" Fill="Green"/>
+							</Grid>
+							<Grid ColumnDefinitions="*,Auto">
+								<TextBlock Text="S3 Storage" Style="{StaticResource SubtleTextBlockStyle}"/>
+								<Ellipse Grid.Column="1" Width="10" Height="10" Fill="Green"/>
+							</Grid>
+						</StackPanel>
+
+						<StackPanel Grid.Column="2" Spacing="10">
+							<TextBlock Text="Security" Style="{StaticResource BodyTextBlockStyle}" FontWeight="SemiBold"/>
+							<Grid ColumnDefinitions="*,Auto">
+								<TextBlock Text="Firewall" Style="{StaticResource SubtleTextBlockStyle}"/>
+								<Ellipse Grid.Column="1" Width="10" Height="10" Fill="Green"/>
+							</Grid>
+							<Grid ColumnDefinitions="*,Auto">
+								<TextBlock Text="Antivirus" Style="{StaticResource SubtleTextBlockStyle}"/>
+								<Ellipse Grid.Column="1" Width="10" Height="10" Fill="Green"/>
+							</Grid>
+							<Grid ColumnDefinitions="*,Auto">
+								<TextBlock Text="VPN Access" Style="{StaticResource SubtleTextBlockStyle}"/>
+								<Ellipse Grid.Column="1" Width="10" Height="10" Fill="Red"/>
+							</Grid>
+						</StackPanel>
+					</Grid>
+				</StackPanel>
+			</Border>
+		</StackPanel>
+	</Grid>
+</Page>
+
