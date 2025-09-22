@@ -71,34 +71,67 @@
 							<ColumnDefinition Width="Auto"/>
 						</Grid.ColumnDefinitions>
 
-						<TextBlock Grid.Column="0" 
-								   Text="Domain Controllers" 
-								   Foreground="#F0F6FC" 
-								   FontSize="18" 
-								   FontWeight="SemiBold"
-								   VerticalAlignment="Center"
-								   Margin="0,0,20,0"/>
+						<!-- Search Box -->
+						<Border Grid.Column="0" 
+								Background="#0D1117" 
+								BorderBrush="#30363D" 
+								BorderThickness="1"
+								CornerRadius="6" 
+								Padding="12,8"
+								MinWidth="250"
+								Margin="0,0,20,0">
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="Auto"/>
+									<ColumnDefinition Width="*"/>
+								</Grid.ColumnDefinitions>
+								<FontIcon Grid.Column="0" 
+										  Glyph="&#xE721;" 
+										  Foreground="#7D8590" 
+										  FontSize="16"
+										  VerticalAlignment="Center"
+										  Margin="0,0,8,0"/>
+								<TextBox x:ConnectionId='6' Grid.Column="1" 
+										 x:Name="SearchTextBox"
+										 Background="Transparent" 
+										 BorderThickness="0"
+										 Foreground="#F0F6FC"
+										 PlaceholderText="Search domain controllers..."
+										 PlaceholderForeground="#7D8590"
+										 VerticalAlignment="Center"/>
+							</Grid>
+						</Border>
 
 						<StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
-							<FontIcon Glyph="&#xE721;" 
-									  Foreground="#7D8590" 
-									  FontSize="16"
-									  VerticalAlignment="Center"/>
-							<ComboBox Background="#0D1117" 
+							<ComboBox x:ConnectionId='4' x:Name="DomainFilterComboBox"
+									  Background="#0D1117" 
 									  BorderBrush="#30363D" 
 									  Foreground="#F0F6FC"
 									  PlaceholderText="All Domains" 
 									  MinWidth="140"
-									  CornerRadius="6"/>
-							<ComboBox Background="#0D1117" 
+									  CornerRadius="6">
+								<ComboBoxItem Content="All Domains" Foreground="#F0F6FC"/>
+								<ComboBoxItem Content="company.local" Foreground="#F0F6FC"/>
+								<ComboBoxItem Content="sales.company.local" Foreground="#F0F6FC"/>
+								<ComboBoxItem Content="hr.company.local" Foreground="#F0F6FC"/>
+							</ComboBox>
+							<ComboBox x:ConnectionId='5' x:Name="StatusFilterComboBox"
+									  Background="#0D1117" 
 									  BorderBrush="#30363D" 
 									  Foreground="#F0F6FC"
 									  PlaceholderText="All Status" 
 									  MinWidth="120"
-									  CornerRadius="6"/>
+									  CornerRadius="6">
+								<ComboBoxItem Content="All Status" Foreground="#F0F6FC"/>
+								<ComboBoxItem Content="Online" Foreground="#F0F6FC"/>
+								<ComboBoxItem Content="Offline" Foreground="#F0F6FC"/>
+								<ComboBoxItem Content="Warning" Foreground="#F0F6FC"/>
+								<ComboBoxItem Content="Error" Foreground="#F0F6FC"/>
+							</ComboBox>
 						</StackPanel>
 
-						<Button Grid.Column="3" 
+						<Button x:ConnectionId='3' Grid.Column="3" 
+								x:Name="RefreshButton"
 								Background="#238636" 
 								Foreground="White" 
 								Padding="12,8" 
