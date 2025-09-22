@@ -18,12 +18,12 @@
         </Grid.Background>
 
         <!-- Main Content -->
-        <Grid MaxWidth="400" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid MaxWidth="600" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Border Background="#161B22" 
                     CornerRadius="12" 
                     BorderBrush="#30363D" 
                     BorderThickness="1"
-                    Padding="32">
+                    Padding="40">
                 <StackPanel Spacing="28">
                     <!-- Header -->
                     <StackPanel Spacing="16" HorizontalAlignment="Center">
