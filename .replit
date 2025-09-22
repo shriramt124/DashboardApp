@@ -1,4 +1,4 @@
-modules = ["dotnet-7.0"]
+modules = ["dotnet-7.0", "dotnet-8.0"]
 
 [nix]
 channel = "stable-25_05"
@@ -7,7 +7,7 @@ channel = "stable-25_05"
 expertMode = true
 
 [workflows]
-runButton = "Run .NET App"
+runButton = "Project"
 
 [[workflows.workflow]]
 name = "Run .NET App"
@@ -17,3 +17,23 @@ mode = "sequential"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "dotnet run --project DashboardApp"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "DashboardApp Build"
+
+[[workflows.workflow]]
+name = "DashboardApp Build"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd DashboardApp && echo \"Building WinUI 3 Dashboard Application...\" && dotnet build && echo \"Build completed. Note: This is a Windows-only WinUI 3 application that cannot run on this Linux environment. To run this application, you need to open it in Visual Studio on a Windows machine.\""
+
+[workflows.workflow.metadata]
+outputType = "console"

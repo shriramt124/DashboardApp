@@ -1,0 +1,1 @@
+/home/runner/workspace/DashboardApp/obj/Debug/net8.0-windows10.0.19041.0/DashboardApp.csproj.AssemblyReference.cache
