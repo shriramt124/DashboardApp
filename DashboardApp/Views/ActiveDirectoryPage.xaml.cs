@@ -76,6 +76,8 @@ public sealed partial class ActiveDirectoryPage : Page
         if (RightSidebar.Visibility == Visibility.Visible)
         {
             RightSidebar.Visibility = Visibility.Collapsed;
+            // Collapse the sidebar column to give full width to main content
+            SidebarColumn.Width = new GridLength(0);
             // Update toggle button icon to indicate sidebar is hidden
             if (ToggleSidebarButton.Content is FontIcon icon)
             {
@@ -85,6 +87,8 @@ public sealed partial class ActiveDirectoryPage : Page
         else
         {
             RightSidebar.Visibility = Visibility.Visible;
+            // Restore the sidebar column width
+            SidebarColumn.Width = new GridLength(300);
             // Update toggle button icon to indicate sidebar is visible
             if (ToggleSidebarButton.Content is FontIcon icon)
             {
