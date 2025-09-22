@@ -16,146 +16,383 @@
 			<Setter Property="BorderThickness" Value="0"/>
 			<Setter Property="Width" Value="36"/>
 			<Setter Property="Height" Value="36"/>
+			<Setter Property="CornerRadius" Value="6"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Border x:Name="BackgroundBorder"
+								Background="{TemplateBinding Background}"
+								CornerRadius="{TemplateBinding CornerRadius}">
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="CommonStates">
+									<VisualState x:Name="Normal"/>
+									<VisualState x:Name="PointerOver">
+										<Storyboard>
+											<ColorAnimation Storyboard.TargetName="BackgroundBorder"
+															Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+															To="#1A4A90E2"
+															Duration="0:0:0.15"/>
+										</Storyboard>
+									</VisualState>
+									<VisualState x:Name="Pressed">
+										<Storyboard>
+											<ColorAnimation Storyboard.TargetName="BackgroundBorder"
+															Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+															To="#2A4A90E2"
+															Duration="0:0:0.1"/>
+										</Storyboard>
+									</VisualState>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+							<ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
 		</Style>
 
-		<Style x:Key="SubtleDropDownButtonStyle" TargetType="DropDownButton">
+		<Style x:Key="ModernDropDownButtonStyle" TargetType="DropDownButton">
 			<Setter Property="Background" Value="Transparent"/>
 			<Setter Property="BorderThickness" Value="0"/>
-			<Setter Property="Padding" Value="10,5"/>
+			<Setter Property="Padding" Value="16,10"/>
+			<Setter Property="CornerRadius" Value="8"/>
 			<Setter Property="VerticalAlignment" Value="Center"/>
+			<Setter Property="FontWeight" Value="Medium"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="DropDownButton">
+						<Border x:Name="BackgroundBorder"
+								Background="{TemplateBinding Background}"
+								CornerRadius="{TemplateBinding CornerRadius}"
+								Padding="{TemplateBinding Padding}">
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="CommonStates">
+									<VisualState x:Name="Normal"/>
+									<VisualState x:Name="PointerOver">
+										<Storyboard>
+											<ColorAnimation Storyboard.TargetName="BackgroundBorder"
+															Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+															To="#0F4A90E2"
+															Duration="0:0:0.15"/>
+										</Storyboard>
+									</VisualState>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*"/>
+									<ColumnDefinition Width="Auto"/>
+								</Grid.ColumnDefinitions>
+								<ContentPresenter x:Name="ContentPresenter" Grid.Column="0"/>
+								<FontIcon Grid.Column="1" Glyph="&#xE70D;" FontSize="12" Margin="8,0,0,0" Foreground="#80FFFFFF"/>
+							</Grid>
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
 		</Style>
 
-		<Style x:Key="ActiveDropDownButtonStyle" TargetType="DropDownButton">
-			<Setter Property="Background" Value="{StaticResource HighlightBrush}"/>
-			<Setter Property="BorderThickness" Value="0"/>
-			<Setter Property="Padding" Value="10,5"/>
-			<Setter Property="VerticalAlignment" Value="Center"/>
-			<Setter Property="CornerRadius" Value="4"/>
+		<Style x:Key="ActiveDropDownButtonStyle" TargetType="DropDownButton" BasedOn="{StaticResource ModernDropDownButtonStyle}">
+			<Setter Property="Background" Value="#1A4A90E2"/>
+		</Style>
+
+		<Style x:Key="ModernSearchBox" TargetType="AutoSuggestBox">
+			<Setter Property="Background" Value="#1A1A1A"/>
+			<Setter Property="BorderBrush" Value="#333333"/>
+			<Setter Property="BorderThickness" Value="1"/>
+			<Setter Property="CornerRadius" Value="8"/>
+			<Setter Property="Padding" Value="12,8"/>
+			<Setter Property="FontSize" Value="14"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="AutoSuggestBox">
+						<Border x:Name="BorderElement"
+								Background="{TemplateBinding Background}"
+								BorderBrush="{TemplateBinding BorderBrush}"
+								BorderThickness="{TemplateBinding BorderThickness}"
+								CornerRadius="{TemplateBinding CornerRadius}">
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="Auto"/>
+									<ColumnDefinition Width="*"/>
+									<ColumnDefinition Width="Auto"/>
+								</Grid.ColumnDefinitions>
+								<FontIcon Grid.Column="0" Glyph="&#xE721;" FontSize="14" Foreground="#808080" Margin="12,0,8,0"/>
+								<TextBox x:Name="TextBox" Grid.Column="1" 
+										 Background="Transparent" 
+										 BorderThickness="0"
+										 Padding="0"
+										 VerticalAlignment="Center"
+										 PlaceholderText="{TemplateBinding PlaceholderText}"/>
+							</Grid>
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
 		</Style>
 	</UserControl.Resources>
 
 	<Grid>
 		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto"/>
-			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="64"/>
+			<RowDefinition Height="56"/>
 		</Grid.RowDefinitions>
 
-		<Grid Grid.Row="0" Height="52" Padding="20,0" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,0,1">
+		<!-- Top Row: Search + User Actions -->
+		<Grid Grid.Row="0" Padding="24,0">
 			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="400"/>
 				<ColumnDefinition Width="*"/>
 				<ColumnDefinition Width="Auto"/>
 			</Grid.ColumnDefinitions>
 
 			<AutoSuggestBox Grid.Column="0"
-                            QueryIcon="Find"
-                            PlaceholderText="Search..."
+                            Style="{StaticResource ModernSearchBox}"
+                            PlaceholderText="Search anything..."
                             VerticalAlignment="Center"
-                            MaxWidth="400"
                             Text="{x:Bind ViewModel.TopSearchQuery, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
-			<StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
-				<Button Style="{StaticResource SubtleIconButton}">
-					<FontIcon Glyph="&#xE713;" Foreground="{StaticResource TextColorSecondaryBrush}"/>
+			<StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
+				<Button Style="{StaticResource SubtleIconButton}" ToolTipService.ToolTip="Settings">
+					<FontIcon Glyph="&#xE713;" FontSize="16" Foreground="#CCCCCC"/>
 				</Button>
 
-				<Grid>
-					<Button Style="{StaticResource SubtleIconButton}">
-						<FontIcon Glyph="&#xE71A;" Foreground="{StaticResource TextColorSecondaryBrush}"/>
-					</Button>
-					<InfoBadge Value="3"
-                               VerticalAlignment="Top" HorizontalAlignment="Right"
-                               Margin="0,4,4,0"
-                               Background="#DA3B3B"/>
-				</Grid>
-
-				<Button Style="{StaticResource SubtleIconButton}" Width="32" Height="32" CornerRadius="16" Background="{StaticResource BrandPrimaryBrush}">
-					<TextBlock Text="J" Foreground="White" FontWeight="SemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+				<Button Style="{StaticResource SubtleIconButton}" ToolTipService.ToolTip="Notifications">
+					<Grid>
+						<FontIcon Glyph="&#xE7E7;" FontSize="16" Foreground="#CCCCCC"/>
+						<Border Background="#FF4757" 
+								CornerRadius="8" 
+								Width="16" Height="16"
+								VerticalAlignment="Top" 
+								HorizontalAlignment="Right"
+								Margin="0,-4,-4,0">
+							<TextBlock Text="3" 
+									   Foreground="White" 
+									   FontSize="10" 
+									   FontWeight="Bold"
+									   HorizontalAlignment="Center" 
+									   VerticalAlignment="Center"/>
+						</Border>
+					</Grid>
 				</Button>
+
+				<DropDownButton x:Name="UserDropdown" Style="{StaticResource SubtleIconButton}" ToolTipService.ToolTip="User Menu">
+					<Border Width="32" Height="32" CornerRadius="16" Background="#4A90E2">
+						<TextBlock Text="J" Foreground="White" FontWeight="SemiBold" 
+								   VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14"/>
+					</Border>
+					<DropDownButton.Flyout>
+						<MenuFlyout x:Name="UserMenuFlyout" Placement="BottomEdgeAlignedRight">
+							<MenuFlyoutItem Text="John Doe" IsEnabled="False" FontWeight="SemiBold"/>
+							<MenuFlyoutSeparator/>
+							<MenuFlyoutItem Text="Profile Settings" Click="OnUserMenuClick" Tag="profile">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE77B;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Account Settings" Click="OnUserMenuClick" Tag="account">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE713;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Notifications" Click="OnUserMenuClick" Tag="notifications">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE7E7;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutSeparator/>
+							<MenuFlyoutItem Text="Sign out" Click="OnUserMenuClick" Tag="signout" Foreground="#FF4757">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE7E8;" Foreground="#FF4757"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+						</MenuFlyout>
+					</DropDownButton.Flyout>
+				</DropDownButton>
 			</StackPanel>
 		</Grid>
 
-		<Border Grid.Row="1" Padding="20,0" Height="48" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,0,1">
-			<StackPanel Orientation="Horizontal" Spacing="5">
+		<!-- Bottom Row: Navigation Dropdowns -->
+		<Border Grid.Row="1" Background="#0D1117" BorderBrush="#30363D" BorderThickness="0,1,0,1">
+			<Grid Padding="24,0">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
 
-				<DropDownButton x:Name="DashboardDropdown" Style="{StaticResource SubtleDropDownButtonStyle}">
-					<StackPanel Orientation="Horizontal" Spacing="8">
-						<FontIcon Glyph="&#xE74C;" Foreground="{StaticResource TextColorSecondaryBrush}"/>
-						<TextBlock Text="Dashboards" Style="{StaticResource BodyTextBlockStyle}"/>
+				<DropDownButton x:Name="DashboardDropdown" Grid.Column="0" Style="{StaticResource ModernDropDownButtonStyle}" HorizontalAlignment="Stretch">
+					<StackPanel Orientation="Horizontal" Spacing="10">
+						<FontIcon Glyph="&#xE74C;" FontSize="16" Foreground="#58A6FF"/>
+						<TextBlock Text="Dashboards" FontSize="14" Foreground="#F0F6FC"/>
 					</StackPanel>
 					<DropDownButton.Flyout>
 						<MenuFlyout>
-							<MenuFlyoutItem Text="Overview" Click="OnMenuItemClick" Tag="dashboard_overview"/>
-							<MenuFlyoutItem Text="Analytics" Click="OnMenuItemClick" Tag="dashboard_analytics"/>
+							<MenuFlyoutItem Text="Overview" Click="OnMenuItemClick" Tag="dashboard_overview">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE7C3;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Analytics" Click="OnMenuItemClick" Tag="dashboard_analytics">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE9D9;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
 						</MenuFlyout>
 					</DropDownButton.Flyout>
 				</DropDownButton>
 
-				<DropDownButton x:Name="ActiveDirectoryDropdown" Style="{StaticResource ActiveDropDownButtonStyle}">
-					<StackPanel Orientation="Horizontal" Spacing="8">
-						<FontIcon Glyph="&#xE716;" Foreground="{StaticResource BrandPrimaryBrush}"/>
-						<TextBlock Text="Active Directory" Foreground="{StaticResource BrandPrimaryBrush}" FontWeight="SemiBold"/>
+				<DropDownButton x:Name="ActiveDirectoryDropdown" Grid.Column="1" Style="{StaticResource ActiveDropDownButtonStyle}" HorizontalAlignment="Stretch">
+					<StackPanel Orientation="Horizontal" Spacing="10">
+						<FontIcon Glyph="&#xE716;" FontSize="16" Foreground="#58A6FF"/>
+						<TextBlock Text="Active Directory" FontSize="14" Foreground="#58A6FF" FontWeight="SemiBold"/>
 					</StackPanel>
 					<DropDownButton.Flyout>
 						<MenuFlyout>
-							<MenuFlyoutItem Text="Overview" Click="OnMenuItemClick" Tag="active_directory"/>
-							<MenuFlyoutItem Text="Users" Click="OnMenuItemClick" Tag="ad_users"/>
-							<MenuFlyoutItem Text="Groups" Click="OnMenuItemClick" Tag="ad_groups"/>
-							<MenuFlyoutItem Text="Computers" Click="OnMenuItemClick" Tag="ad_computers"/>
-							<MenuFlyoutItem Text="Domains" Click="OnMenuItemClick" Tag="ad_domains"/>
-							<MenuFlyoutItem Text="Forest" Click="OnMenuItemClick" Tag="ad_forest"/>
+							<MenuFlyoutItem Text="Overview" Click="OnMenuItemClick" Tag="active_directory">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE8BC;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Users" Click="OnMenuItemClick" Tag="ad_users">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE77B;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Groups" Click="OnMenuItemClick" Tag="ad_groups">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE902;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Computers" Click="OnMenuItemClick" Tag="ad_computers">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE7F8;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Domains" Click="OnMenuItemClick" Tag="ad_domains">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE968;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Forest" Click="OnMenuItemClick" Tag="ad_forest">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE8A5;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
 						</MenuFlyout>
 					</DropDownButton.Flyout>
 				</DropDownButton>
 
-				<DropDownButton x:Name="AwsDropdown" Style="{StaticResource SubtleDropDownButtonStyle}">
-					<StackPanel Orientation="Horizontal" Spacing="8">
-						<FontIcon Glyph="&#xE753;" Foreground="{StaticResource TextColorSecondaryBrush}"/>
-						<TextBlock Text="AWS" Style="{StaticResource BodyTextBlockStyle}"/>
+				<DropDownButton x:Name="AwsDropdown" Grid.Column="2" Style="{StaticResource ModernDropDownButtonStyle}" HorizontalAlignment="Stretch">
+					<StackPanel Orientation="Horizontal" Spacing="10">
+						<FontIcon Glyph="&#xE753;" FontSize="16" Foreground="#F0F6FC"/>
+						<TextBlock Text="AWS" FontSize="14" Foreground="#F0F6FC"/>
 					</StackPanel>
 					<DropDownButton.Flyout>
 						<MenuFlyout>
-							<MenuFlyoutItem Text="Overview" Click="OnMenuItemClick" Tag="aws_home"/>
-							<MenuFlyoutItem Text="EC2" Click="OnMenuItemClick" Tag="aws_ec2"/>
-							<MenuFlyoutItem Text="S3" Click="OnMenuItemClick" Tag="aws_s3"/>
-							<MenuFlyoutItem Text="RDS" Click="OnMenuItemClick" Tag="aws_rds"/>
-							<MenuFlyoutItem Text="Lambda" Click="OnMenuItemClick" Tag="aws_lambda"/>
+							<MenuFlyoutItem Text="Overview" Click="OnMenuItemClick" Tag="aws_home">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE8BC;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="EC2" Click="OnMenuItemClick" Tag="aws_ec2">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE7F8;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="S3" Click="OnMenuItemClick" Tag="aws_s3">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE8B7;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="RDS" Click="OnMenuItemClick" Tag="aws_rds">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE74E;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Lambda" Click="OnMenuItemClick" Tag="aws_lambda">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE945;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
 						</MenuFlyout>
 					</DropDownButton.Flyout>
 				</DropDownButton>
 
-				<DropDownButton x:Name="AzureDropdown" Style="{StaticResource SubtleDropDownButtonStyle}">
-					<StackPanel Orientation="Horizontal" Spacing="8">
-						<FontIcon Glyph="&#xE753;" Foreground="{StaticResource TextColorSecondaryBrush}"/>
-						<TextBlock Text="Azure" Style="{StaticResource BodyTextBlockStyle}"/>
+				<DropDownButton x:Name="AzureDropdown" Grid.Column="3" Style="{StaticResource ModernDropDownButtonStyle}" HorizontalAlignment="Stretch">
+					<StackPanel Orientation="Horizontal" Spacing="10">
+						<FontIcon Glyph="&#xE753;" FontSize="16" Foreground="#F0F6FC"/>
+						<TextBlock Text="Azure" FontSize="14" Foreground="#F0F6FC"/>
 					</StackPanel>
 					<DropDownButton.Flyout>
 						<MenuFlyout>
-							<MenuFlyoutItem Text="Overview" Click="OnMenuItemClick" Tag="azure_home"/>
-							<MenuFlyoutItem Text="Virtual Machines" Click="OnMenuItemClick" Tag="azure_vms"/>
-							<MenuFlyoutItem Text="Storage" Click="OnMenuItemClick" Tag="azure_storage"/>
-							<MenuFlyoutItem Text="SQL Database" Click="OnMenuItemClick" Tag="azure_sql"/>
-							<MenuFlyoutItem Text="Functions" Click="OnMenuItemClick" Tag="azure_functions"/>
+							<MenuFlyoutItem Text="Overview" Click="OnMenuItemClick" Tag="azure_home">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE8BC;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Virtual Machines" Click="OnMenuItemClick" Tag="azure_vms">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE7F8;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Storage" Click="OnMenuItemClick" Tag="azure_storage">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE8B7;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="SQL Database" Click="OnMenuItemClick" Tag="azure_sql">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE74E;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Functions" Click="OnMenuItemClick" Tag="azure_functions">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE945;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
 						</MenuFlyout>
 					</DropDownButton.Flyout>
 				</DropDownButton>
 
-				<DropDownButton x:Name="ForensicsDropdown" Style="{StaticResource SubtleDropDownButtonStyle}">
-					<StackPanel Orientation="Horizontal" Spacing="8">
-						<FontIcon Glyph="&#xE720;" Foreground="{StaticResource TextColorSecondaryBrush}"/>
-						<TextBlock Text="Digital Forensics" Style="{StaticResource BodyTextBlockStyle}"/>
+				<DropDownButton x:Name="ForensicsDropdown" Grid.Column="4" Style="{StaticResource ModernDropDownButtonStyle}" HorizontalAlignment="Stretch">
+					<StackPanel Orientation="Horizontal" Spacing="10">
+						<FontIcon Glyph="&#xE720;" FontSize="16" Foreground="#F0F6FC"/>
+						<TextBlock Text="Digital Forensics" FontSize="14" Foreground="#F0F6FC"/>
 					</StackPanel>
 					<DropDownButton.Flyout>
 						<MenuFlyout>
-							<MenuFlyoutItem Text="Overview" Click="OnMenuItemClick" Tag="forensics_home"/>
-							<MenuFlyoutItem Text="Cases" Click="OnMenuItemClick" Tag="forensics_cases"/>
-							<MenuFlyoutItem Text="Evidence" Click="OnMenuItemClick" Tag="forensics_evidence"/>
-							<MenuFlyoutItem Text="Analysis" Click="OnMenuItemClick" Tag="forensics_analysis"/>
-							<MenuFlyoutItem Text="Reports" Click="OnMenuItemClick" Tag="forensics_reports"/>
+							<MenuFlyoutItem Text="Overview" Click="OnMenuItemClick" Tag="forensics_home">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE8BC;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Cases" Click="OnMenuItemClick" Tag="forensics_cases">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE7C5;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Evidence" Click="OnMenuItemClick" Tag="forensics_evidence">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE8B9;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Analysis" Click="OnMenuItemClick" Tag="forensics_analysis">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE9D9;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
+							<MenuFlyoutItem Text="Reports" Click="OnMenuItemClick" Tag="forensics_reports">
+								<MenuFlyoutItem.Icon>
+									<FontIcon Glyph="&#xE74C;"/>
+								</MenuFlyoutItem.Icon>
+							</MenuFlyoutItem>
 						</MenuFlyout>
 					</DropDownButton.Flyout>
 				</DropDownButton>
-			</StackPanel>
+			</Grid>
 		</Border>
-
 	</Grid>
 </UserControl>
