@@ -1,4 +1,3 @@
-
 <Page
     x:Class="DashboardApp.Views.LoginPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -18,12 +17,12 @@
         </Grid.Background>
 
         <!-- Main Content -->
-        <Grid MaxWidth="600" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid MaxWidth="1200" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Border Background="#161B22" 
                     CornerRadius="12" 
                     BorderBrush="#30363D" 
                     BorderThickness="1"
-                    Padding="40">
+                    Padding="30">
                 <StackPanel Spacing="28">
                     <!-- Header -->
                     <StackPanel Spacing="16" HorizontalAlignment="Center">
@@ -36,7 +35,7 @@
                                      Foreground="White" 
                                      FontSize="24"/>
                         </Border>
-                        
+
                         <!-- Title -->
                         <StackPanel Spacing="4">
                             <TextBlock Text="Welcome to Pravea" 
