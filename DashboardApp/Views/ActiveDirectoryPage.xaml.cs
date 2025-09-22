@@ -16,6 +16,7 @@ public sealed partial class ActiveDirectoryPage : Page
         DomainFilterComboBox.SelectionChanged += DomainFilterComboBox_SelectionChanged;
         StatusFilterComboBox.SelectionChanged += StatusFilterComboBox_SelectionChanged;
         RefreshButton.Click += RefreshButton_Click;
+        ToggleSidebarButton.Click += ToggleSidebarButton_Click;
         
         // Set default selections
         DomainFilterComboBox.SelectedIndex = 0; // All Domains
@@ -67,5 +68,28 @@ public sealed partial class ActiveDirectoryPage : Page
             timer.Stop();
         };
         timer.Start();
+    }
+    
+    private void ToggleSidebarButton_Click(object sender, RoutedEventArgs e)
+    {
+        // Toggle sidebar visibility
+        if (RightSidebar.Visibility == Visibility.Visible)
+        {
+            RightSidebar.Visibility = Visibility.Collapsed;
+            // Update toggle button icon to indicate sidebar is hidden
+            if (ToggleSidebarButton.Content is FontIcon icon)
+            {
+                icon.Glyph = "\uE76B"; // Show icon
+            }
+        }
+        else
+        {
+            RightSidebar.Visibility = Visibility.Visible;
+            // Update toggle button icon to indicate sidebar is visible
+            if (ToggleSidebarButton.Content is FontIcon icon)
+            {
+                icon.Glyph = "\uE76C"; // Hide icon
+            }
+        }
     }
 }

@@ -130,18 +130,28 @@
 							</ComboBox>
 						</StackPanel>
 
-						<Button Grid.Column="3" 
-								x:Name="RefreshButton"
-								Background="#238636" 
-								Foreground="White" 
-								Padding="12,8" 
-								CornerRadius="6"
-								FontWeight="Medium">
-							<StackPanel Orientation="Horizontal" Spacing="6">
+						<StackPanel Grid.Column="3" Orientation="Horizontal" Spacing="8" HorizontalAlignment="Right">
+							<Button x:Name="RefreshButton"
+									Background="#238636" 
+									Foreground="White" 
+									Padding="10" 
+									CornerRadius="6"
+									Width="40"
+									Height="36">
 								<FontIcon Glyph="&#xE72C;" FontSize="14"/>
-								<TextBlock Text="Refresh"/>
-							</StackPanel>
-						</Button>
+							</Button>
+							<Button x:Name="ToggleSidebarButton"
+									Background="#21262D" 
+									Foreground="#F0F6FC" 
+									BorderBrush="#30363D"
+									BorderThickness="1"
+									Padding="10" 
+									CornerRadius="6"
+									Width="40"
+									Height="36">
+								<FontIcon Glyph="&#xE76C;" FontSize="14"/>
+							</Button>
+						</StackPanel>
 					</Grid>
 
 					<Border BorderBrush="#30363D" BorderThickness="0,1,0,0">
@@ -290,7 +300,7 @@
 		</StackPanel>
 
 		<!-- Right Sidebar -->
-		<Border Grid.Column="1" Background="#161B22" CornerRadius="12" BorderBrush="#30363D" BorderThickness="1" Padding="20">
+		<Border x:Name="RightSidebar" Grid.Column="1" Background="#161B22" CornerRadius="12" BorderBrush="#30363D" BorderThickness="1" Padding="20">
 			<StackPanel Spacing="24">
 				<!-- Dependencies Section -->
 				<StackPanel Spacing="16">
