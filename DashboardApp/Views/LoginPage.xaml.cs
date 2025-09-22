@@ -1,3 +1,4 @@
+
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ namespace DashboardApp.Views
     {
         private bool _isPasswordVisible = false;
         private Dictionary<string, string> _mockUsers;
+        private TextBox _visiblePasswordTextBox;
 
         public LoginPage()
         {
@@ -37,23 +39,22 @@ namespace DashboardApp.Views
                 PasswordTextBox.Visibility = Visibility.Collapsed;
                 
                 // Create a TextBox to show the password
-                var textBox = new TextBox
+                _visiblePasswordTextBox = new TextBox
                 {
                     Background = PasswordTextBox.Background,
                     BorderThickness = PasswordTextBox.BorderThickness,
                     Foreground = PasswordTextBox.Foreground,
                     FontSize = PasswordTextBox.FontSize,
                     Text = password,
-                    VerticalAlignment = PasswordTextBox.VerticalAlignment,
-                    Name = "VisiblePasswordTextBox"
+                    VerticalAlignment = PasswordTextBox.VerticalAlignment
                 };
                 
                 // Find the grid and replace password box with text box
                 var grid = PasswordTextBox.Parent as Grid;
                 if (grid != null)
                 {
-                    Grid.SetColumn(textBox, 1);
-                    grid.Children.Add(textBox);
+                    Grid.SetColumn(_visiblePasswordTextBox, 1);
+                    grid.Children.Add(_visiblePasswordTextBox);
                 }
                 
                 ShowPasswordIcon.Glyph = "\uE8F4"; // Hide icon
@@ -61,30 +62,28 @@ namespace DashboardApp.Views
             else
             {
                 // Hide password
-                var grid = PasswordTextBox.Parent as Grid;
-                if (grid != null)
+                if (_visiblePasswordTextBox != null)
                 {
-                    // Find and remove the visible text box
-                    for (int i = grid.Children.Count - 1; i >= 0; i--)
+                    var grid = PasswordTextBox.Parent as Grid;
+                    if (grid != null)
                     {
-                        if (grid.Children[i] is TextBox textBox && textBox.Name == "VisiblePasswordTextBox")
-                        {
-                            PasswordTextBox.Password = textBox.Text;
-                            grid.Children.RemoveAt(i);
-                            break;
-                        }
+                        PasswordTextBox.Password = _visiblePasswordTextBox.Text;
+                        grid.Children.Remove(_visiblePasswordTextBox);
                     }
                 }
                 
                 PasswordTextBox.Visibility = Visibility.Visible;
                 ShowPasswordIcon.Glyph = "\uE7B3"; // Show icon
+                _visiblePasswordTextBox = null;
             }
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             var username = UsernameTextBox.Text.Trim();
-            var password = PasswordTextBox.Password;
+            var password = _isPasswordVisible && _visiblePasswordTextBox != null 
+                ? _visiblePasswordTextBox.Text 
+                : PasswordTextBox.Password;
 
             // Clear previous error
             ErrorMessageTextBlock.Visibility = Visibility.Collapsed;
@@ -113,13 +112,6 @@ namespace DashboardApp.Views
             {
                 ShowError("Invalid username or password.");
             }
-        }
-
-        private void RegisterButton_Click(object sender, RoutedEventArgs e)
-        {
-            // Navigate to register page (to be created later)
-            // For now, show a message
-            ShowError("Registration feature coming soon!");
         }
 
         private void ShowError(string message)
