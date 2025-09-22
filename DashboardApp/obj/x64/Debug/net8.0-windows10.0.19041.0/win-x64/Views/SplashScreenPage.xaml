@@ -12,12 +12,9 @@
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="40">
             <!-- App Logo/Icon -->
             <StackPanel HorizontalAlignment="Center" Spacing="16">
-                <Border Background="#1F6FEB" CornerRadius="16" Padding="24" HorizontalAlignment="Center">
-                    <FontIcon Glyph="&#xE716;" Foreground="White" FontSize="48"/>
-                </Border>
-                <TextBlock Text="Dashboard App" 
+                <TextBlock Text="Pravea" 
                           Foreground="#F0F6FC" 
-                          FontSize="32" 
+                          FontSize="48" 
                           FontWeight="Bold"
                           HorizontalAlignment="Center"/>
                 <TextBlock Text="Enterprise Management Platform" 
@@ -35,13 +32,13 @@
                                   Foreground="#F0F6FC" 
                                   FontSize="14" 
                                   HorizontalAlignment="Left"/>
-                        <TextBlock x:ConnectionId='8' x:Name="ProgressText" 
+                        <TextBlock x:ConnectionId='6' x:Name="ProgressText" 
                                   Text="0%" 
                                   Foreground="#58A6FF" 
                                   FontSize="14" 
                                   HorizontalAlignment="Right"/>
                     </Grid>
-                    <ProgressBar x:ConnectionId='7' x:Name="LoadingProgressBar" 
+                    <ProgressBar x:ConnectionId='5' x:Name="LoadingProgressBar" 
                                 Value="0" 
                                 Maximum="100" 
                                 Background="#21262D"
@@ -51,25 +48,16 @@
                 </StackPanel>
 
                 <!-- Current Loading Item -->
-                <StackPanel Spacing="12">
-                    <StackPanel x:ConnectionId='2' x:Name="CurrentLoadingItem" Orientation="Horizontal" Spacing="12" HorizontalAlignment="Center">
-                        <ProgressRing x:ConnectionId='5' x:Name="CurrentSpinner" 
-                                     Width="16" 
-                                     Height="16" 
-                                     IsActive="True" 
-                                     Foreground="#58A6FF"/>
-                        <TextBlock x:ConnectionId='6' x:Name="CurrentLoadingText" 
-                                  Text="Starting up..." 
-                                  Foreground="#F0F6FC" 
-                                  FontSize="14"/>
-                    </StackPanel>
-
-                    <!-- Completed Dependencies -->
-                    <StackPanel x:ConnectionId='3' x:Name="CompletedDependencies" Spacing="8" MaxHeight="120">
-                        <ScrollViewer VerticalScrollBarVisibility="Auto" VerticalScrollMode="Auto">
-                            <StackPanel x:ConnectionId='4' x:Name="CompletedStack" Spacing="6"/>
-                        </ScrollViewer>
-                    </StackPanel>
+                <StackPanel x:ConnectionId='2' x:Name="CurrentLoadingItem" Orientation="Horizontal" Spacing="12" HorizontalAlignment="Center">
+                    <ProgressRing x:ConnectionId='3' x:Name="CurrentSpinner" 
+                                 Width="16" 
+                                 Height="16" 
+                                 IsActive="True" 
+                                 Foreground="#58A6FF"/>
+                    <TextBlock x:ConnectionId='4' x:Name="CurrentLoadingText" 
+                              Text="Starting up..." 
+                              Foreground="#F0F6FC" 
+                              FontSize="14"/>
                 </StackPanel>
             </StackPanel>
         </StackPanel>
