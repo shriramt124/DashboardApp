@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -44,6 +44,12 @@ namespace DashboardApp
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
         {
             _window = new MainWindow();
+            
+            // Show splash screen first
+            var splashFrame = new Microsoft.UI.Xaml.Controls.Frame();
+            splashFrame.Navigate(typeof(Views.SplashScreenPage));
+            _window.Content = splashFrame;
+            
             _window.Activate();
         }
     }
