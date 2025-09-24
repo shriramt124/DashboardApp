@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using DashboardApp.Views;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace DashboardApp.ViewModels;
 
@@ -23,6 +24,15 @@ public class NavigationItem
     public string Name { get; set; } = string.Empty;
     public string PageTag { get; set; } = string.Empty;
     public string Icon { get; set; } = string.Empty;
+}
+
+public class SearchResult
+{
+    public string DisplayName { get; set; } = string.Empty;
+    public string PageTag { get; set; } = string.Empty;
+    public string Category { get; set; } = string.Empty;
+    public string Icon { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
 }
 
 public class ShellViewModel : BaseViewModel
@@ -116,6 +126,16 @@ public class ShellViewModel : BaseViewModel
         set { _topSearchQuery = value; OnPropertyChanged(); }
     }
 
+    private ObservableCollection<SearchResult> _searchSuggestions = new();
+    public ObservableCollection<SearchResult> SearchSuggestions
+    {
+        get => _searchSuggestions;
+        set { _searchSuggestions = value; OnPropertyChanged(); }
+    }
+
+    // Master list of all searchable items
+    private readonly List<SearchResult> _allSearchableItems = new();
+
     // Current page tracking
     private string _currentPageTag = "active_directory";
     public string CurrentPageTag
@@ -134,6 +154,86 @@ public class ShellViewModel : BaseViewModel
         SelectedAwsItem = AwsItems[0];
         SelectedAzureItem = AzureItems[0];
         SelectedForensicsItem = DigitalForensicsItems[0];
+
+        // Initialize search items
+        InitializeSearchableItems();
+    }
+
+    private void InitializeSearchableItems()
+    {
+        _allSearchableItems.Clear();
+
+        // Add dashboard items
+        _allSearchableItems.Add(new SearchResult { DisplayName = "Dashboard Overview", PageTag = "dashboard_overview", Category = "Dashboard", Icon = "&#xE7C3;", Description = "View system overview and key metrics" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "Analytics", PageTag = "dashboard_analytics", Category = "Dashboard", Icon = "&#xE9D9;", Description = "Analyze system performance and trends" });
+
+        // Add Active Directory items
+        _allSearchableItems.Add(new SearchResult { DisplayName = "Active Directory", PageTag = "active_directory", Category = "Active Directory", Icon = "&#xE716;", Description = "Manage Active Directory services" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "AD Users", PageTag = "ad_users", Category = "Active Directory", Icon = "&#xE77B;", Description = "Manage user accounts and permissions" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "AD Groups", PageTag = "ad_groups", Category = "Active Directory", Icon = "&#xE902;", Description = "Manage security and distribution groups" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "AD Computers", PageTag = "ad_computers", Category = "Active Directory", Icon = "&#xE7F8;", Description = "Manage computer accounts and policies" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "AD Domains", PageTag = "ad_domains", Category = "Active Directory", Icon = "&#xE968;", Description = "Manage domain configuration and trust relationships" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "AD Forest", PageTag = "ad_forest", Category = "Active Directory", Icon = "&#xE8A5;", Description = "Manage forest-wide settings and schemas" });
+
+        // Add AWS items
+        _allSearchableItems.Add(new SearchResult { DisplayName = "AWS Console", PageTag = "aws_home", Category = "AWS", Icon = "&#xE753;", Description = "Access AWS management console" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "EC2 Instances", PageTag = "aws_ec2", Category = "AWS", Icon = "&#xE7F8;", Description = "Manage EC2 virtual machines and compute resources" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "S3 Storage", PageTag = "aws_s3", Category = "AWS", Icon = "&#xE8B7;", Description = "Manage S3 buckets and object storage" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "RDS Databases", PageTag = "aws_rds", Category = "AWS", Icon = "&#xE74E;", Description = "Manage relational database instances" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "Lambda Functions", PageTag = "aws_lambda", Category = "AWS", Icon = "&#xE945;", Description = "Manage serverless Lambda functions" });
+
+        // Add Azure items
+        _allSearchableItems.Add(new SearchResult { DisplayName = "Azure Portal", PageTag = "azure_home", Category = "Azure", Icon = "&#xE753;", Description = "Access Azure management portal" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "Virtual Machines", PageTag = "azure_vms", Category = "Azure", Icon = "&#xE7F8;", Description = "Manage Azure virtual machines" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "Storage Accounts", PageTag = "azure_storage", Category = "Azure", Icon = "&#xE8B7;", Description = "Manage Azure storage accounts and containers" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "SQL Databases", PageTag = "azure_sql", Category = "Azure", Icon = "&#xE74E;", Description = "Manage Azure SQL databases and servers" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "Azure Functions", PageTag = "azure_functions", Category = "Azure", Icon = "&#xE945;", Description = "Manage Azure serverless functions" });
+
+        // Add Digital Forensics items
+        _allSearchableItems.Add(new SearchResult { DisplayName = "Forensics Home", PageTag = "forensics_home", Category = "Forensics", Icon = "&#xE720;", Description = "Digital forensics overview and tools" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "Forensics Cases", PageTag = "forensics_cases", Category = "Forensics", Icon = "&#xE7C5;", Description = "Manage investigation cases and workflows" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "Evidence Management", PageTag = "forensics_evidence", Category = "Forensics", Icon = "&#xE8B9;", Description = "Track and analyze digital evidence" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "Forensics Analysis", PageTag = "forensics_analysis", Category = "Forensics", Icon = "&#xE9D9;", Description = "Perform detailed forensic analysis" });
+        _allSearchableItems.Add(new SearchResult { DisplayName = "Forensics Reports", PageTag = "forensics_reports", Category = "Forensics", Icon = "&#xE74C;", Description = "Generate forensic investigation reports" });
+    }
+
+    public void UpdateSearchSuggestions(string query)
+    {
+        SearchSuggestions.Clear();
+
+        if (string.IsNullOrWhiteSpace(query) || query.Length < 2)
+            return;
+
+        var filteredItems = _allSearchableItems
+            .Where(item => item.DisplayName.Contains(query, StringComparison.OrdinalIgnoreCase) ||
+                          item.Category.Contains(query, StringComparison.OrdinalIgnoreCase) ||
+                          item.Description.Contains(query, StringComparison.OrdinalIgnoreCase))
+            .OrderBy(item => item.Category)
+            .ThenBy(item => item.DisplayName)
+            .Take(8);
+
+        foreach (var item in filteredItems)
+        {
+            SearchSuggestions.Add(item);
+        }
+    }
+
+    public void PerformGlobalSearch(string query)
+    {
+        // Find the best match and navigate to it
+        var bestMatch = _allSearchableItems
+            .FirstOrDefault(item => item.DisplayName.Contains(query, StringComparison.OrdinalIgnoreCase));
+
+        if (bestMatch != null)
+        {
+            Navigate(bestMatch.PageTag);
+        }
+    }
+
+    public void ClearSearch()
+    {
+        TopSearchQuery = string.Empty;
+        SearchSuggestions.Clear();
     }
 
     public void Navigate(string pageTag)

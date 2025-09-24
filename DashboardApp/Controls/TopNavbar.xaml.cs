@@ -24,6 +24,36 @@ namespace DashboardApp.Controls
             }
         }
 
+        private void OnSearchQuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
+        {
+            if (args.ChosenSuggestion is SearchResult searchResult)
+            {
+                ViewModel?.Navigate(searchResult.PageTag);
+                ViewModel?.ClearSearch();
+            }
+            else if (!string.IsNullOrEmpty(args.QueryText))
+            {
+                // Perform global search with the query text
+                ViewModel?.PerformGlobalSearch(args.QueryText);
+            }
+        }
+
+        private void OnSearchTextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+        {
+            if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
+            {
+                ViewModel?.UpdateSearchSuggestions(sender.Text);
+            }
+        }
+
+        private void OnSearchSuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
+        {
+            if (args.SelectedItem is SearchResult searchResult)
+            {
+                sender.Text = searchResult.DisplayName;
+            }
+        }
+
         private void OnUserMenuClick(object sender, RoutedEventArgs e)
         {
             if (sender is MenuFlyoutItem menuItem && menuItem.Tag is string action)
