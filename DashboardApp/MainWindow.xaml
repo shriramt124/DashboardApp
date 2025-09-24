@@ -9,6 +9,6 @@
     mc:Ignorable="d">
 
     <Grid x:Name="MainGrid">
-        <!-- Content will be set dynamically -->
+        <views:ShellPage x:Name="ShellPageContent"/>
     </Grid>
     </Window>
