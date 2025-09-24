@@ -3,68 +3,52 @@
   "WorkspaceRootPath": "D:\\androidprojects\\DashboardApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\viewmodels\\shellviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\viewmodels\\shellviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\views\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\views\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\views\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\views\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\controls\\globalleftsidebar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\controls\\globalleftsidebar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\views\\activedirectorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\views\\activedirectorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\controls\\globalleftsidebar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\controls\\globalleftsidebar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\controls\\globalleftsidebar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\controls\\globalleftsidebar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\viewmodels\\shellviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\viewmodels\\shellviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\controls\\topnavbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\controls\\topnavbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\views\\shellpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\views\\shellpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\controls\\topnavbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\controls\\topnavbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\views\\activedirectorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\views\\activedirectorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\views\\activedirectorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\views\\activedirectorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\views\\awsec2page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\views\\awsec2page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\views\\awsec2page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\views\\awsec2page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\views\\shellpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\views\\shellpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\views\\homepage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\views\\homepage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\views\\activedirectorypage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\views\\activedirectorypage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\controls\\topnavbar.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\controls\\topnavbar.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|d:\\androidprojects\\dashboardapp\\dashboardapp\\views\\awslambdapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{66E0EDDF-7AC0-4940-94B2-B27CEE0DBC8C}|DashboardApp\\DashboardApp.csproj|solutionrelative:dashboardapp\\views\\awslambdapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,209 +58,155 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GlobalLeftSidebar.xaml",
-              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\GlobalLeftSidebar.xaml",
-              "RelativeDocumentMoniker": "DashboardApp\\Controls\\GlobalLeftSidebar.xaml",
-              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\GlobalLeftSidebar.xaml",
-              "RelativeToolTip": "DashboardApp\\Controls\\GlobalLeftSidebar.xaml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEAAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-19T17:35:48.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "DashboardApp\\MainWindow.xaml",
-              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\MainWindow.xaml",
-              "RelativeToolTip": "DashboardApp\\MainWindow.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-19T16:33:47.746Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomePage.xaml.cs",
-              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\HomePage.xaml.cs",
-              "RelativeDocumentMoniker": "DashboardApp\\Views\\HomePage.xaml.cs",
-              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\HomePage.xaml.cs",
-              "RelativeToolTip": "DashboardApp\\Views\\HomePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T16:59:38.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "GlobalLeftSidebar.xaml.cs",
               "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\GlobalLeftSidebar.xaml.cs",
               "RelativeDocumentMoniker": "DashboardApp\\Controls\\GlobalLeftSidebar.xaml.cs",
               "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\GlobalLeftSidebar.xaml.cs",
               "RelativeToolTip": "DashboardApp\\Controls\\GlobalLeftSidebar.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T17:35:40.927Z",
+              "WhenOpened": "2025-09-23T09:18:51.647Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomePage.xaml",
-              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\HomePage.xaml",
-              "RelativeDocumentMoniker": "DashboardApp\\Views\\HomePage.xaml",
-              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\HomePage.xaml",
-              "RelativeToolTip": "DashboardApp\\Views\\HomePage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "TopNavbar.xaml",
+              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\TopNavbar.xaml",
+              "RelativeDocumentMoniker": "DashboardApp\\Controls\\TopNavbar.xaml",
+              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\TopNavbar.xaml",
+              "RelativeToolTip": "DashboardApp\\Controls\\TopNavbar.xaml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-19T18:38:43.132Z",
+              "WhenOpened": "2025-09-23T02:29:10.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GlobalLeftSidebar.xaml",
+              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\GlobalLeftSidebar.xaml",
+              "RelativeDocumentMoniker": "DashboardApp\\Controls\\GlobalLeftSidebar.xaml",
+              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\GlobalLeftSidebar.xaml",
+              "RelativeToolTip": "DashboardApp\\Controls\\GlobalLeftSidebar.xaml",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAAAKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-23T02:23:08.156Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AwsEc2Page.xaml.cs",
+              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\AwsEc2Page.xaml.cs",
+              "RelativeDocumentMoniker": "DashboardApp\\Views\\AwsEc2Page.xaml.cs",
+              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\AwsEc2Page.xaml.cs",
+              "RelativeToolTip": "DashboardApp\\Views\\AwsEc2Page.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T14:35:29.621Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ActiveDirectoryPage.xaml.cs",
+              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\ActiveDirectoryPage.xaml.cs",
+              "RelativeDocumentMoniker": "DashboardApp\\Views\\ActiveDirectoryPage.xaml.cs",
+              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\ActiveDirectoryPage.xaml.cs",
+              "RelativeToolTip": "DashboardApp\\Views\\ActiveDirectoryPage.xaml.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowCUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T13:56:15.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TopNavbar.xaml.cs",
+              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\TopNavbar.xaml.cs",
+              "RelativeDocumentMoniker": "DashboardApp\\Controls\\TopNavbar.xaml.cs",
+              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\TopNavbar.xaml.cs",
+              "RelativeToolTip": "DashboardApp\\Controls\\TopNavbar.xaml.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAowGQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T02:29:13.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ShellViewModel.cs",
               "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\ViewModels\\ShellViewModel.cs",
               "RelativeDocumentMoniker": "DashboardApp\\ViewModels\\ShellViewModel.cs",
               "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\ViewModels\\ShellViewModel.cs",
               "RelativeToolTip": "DashboardApp\\ViewModels\\ShellViewModel.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA1wBcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAwwBcAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-19T16:49:34.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\App.xaml",
-              "RelativeDocumentMoniker": "DashboardApp\\App.xaml",
-              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\App.xaml",
-              "RelativeToolTip": "DashboardApp\\App.xaml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA4AAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-19T17:25:03.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TopNavbar.xaml.cs",
-              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\TopNavbar.xaml.cs",
-              "RelativeDocumentMoniker": "DashboardApp\\Controls\\TopNavbar.xaml.cs",
-              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\TopNavbar.xaml.cs",
-              "RelativeToolTip": "DashboardApp\\Controls\\TopNavbar.xaml.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T16:48:54.627Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ShellPage.xaml.cs",
-              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\ShellPage.xaml.cs",
-              "RelativeDocumentMoniker": "DashboardApp\\Views\\ShellPage.xaml.cs",
-              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\ShellPage.xaml.cs",
-              "RelativeToolTip": "DashboardApp\\Views\\ShellPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T16:51:30.294Z",
-              "EditorCaption": ""
+              "Title": "AwsEc2Page.xaml",
+              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\AwsEc2Page.xaml",
+              "RelativeDocumentMoniker": "DashboardApp\\Views\\AwsEc2Page.xaml",
+              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\AwsEc2Page.xaml",
+              "RelativeToolTip": "DashboardApp\\Views\\AwsEc2Page.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-22T14:35:26.963Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "TopNavbar.xaml",
-              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\TopNavbar.xaml",
-              "RelativeDocumentMoniker": "DashboardApp\\Controls\\TopNavbar.xaml",
-              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\TopNavbar.xaml",
-              "RelativeToolTip": "DashboardApp\\Controls\\TopNavbar.xaml",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAAAHEAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-19T16:50:09.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ActiveDirectoryPage.xaml.cs",
-              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\ActiveDirectoryPage.xaml.cs",
-              "RelativeDocumentMoniker": "DashboardApp\\Views\\ActiveDirectoryPage.xaml.cs",
-              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\ActiveDirectoryPage.xaml.cs",
-              "RelativeToolTip": "DashboardApp\\Views\\ActiveDirectoryPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T16:56:06.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ActiveDirectoryPage.xaml",
-              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\ActiveDirectoryPage.xaml",
-              "RelativeDocumentMoniker": "DashboardApp\\Views\\ActiveDirectoryPage.xaml",
-              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\ActiveDirectoryPage.xaml",
-              "RelativeToolTip": "DashboardApp\\Views\\ActiveDirectoryPage.xaml",
-              "ViewState": "AgIAALcAAAAAAAAAAAAAADYAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-19T16:55:09.226Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "ShellPage.xaml",
               "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\ShellPage.xaml",
               "RelativeDocumentMoniker": "DashboardApp\\Views\\ShellPage.xaml",
               "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\ShellPage.xaml",
               "RelativeToolTip": "DashboardApp\\Views\\ShellPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-19T17:24:49.353Z"
+              "WhenOpened": "2025-09-22T14:05:39.275Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "HomePage.xaml",
-              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\HomePage.xaml",
-              "RelativeDocumentMoniker": "DashboardApp\\Views\\HomePage.xaml",
-              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\HomePage.xaml",
-              "RelativeToolTip": "DashboardApp\\Views\\HomePage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswBIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-19T16:58:53.046Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 6,
               "Title": "ActiveDirectoryPage.xaml",
               "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\ActiveDirectoryPage.xaml",
               "RelativeDocumentMoniker": "DashboardApp\\Views\\ActiveDirectoryPage.xaml",
               "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\ActiveDirectoryPage.xaml",
               "RelativeToolTip": "DashboardApp\\Views\\ActiveDirectoryPage.xaml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAD4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-19T16:54:31.247Z"
+              "WhenOpened": "2025-09-22T13:55:29.723Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TopNavbar.xaml",
-              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\TopNavbar.xaml",
-              "RelativeDocumentMoniker": "DashboardApp\\Controls\\TopNavbar.xaml",
-              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Controls\\TopNavbar.xaml",
-              "RelativeToolTip": "DashboardApp\\Controls\\TopNavbar.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0AAAAOAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "DashboardApp\\Views\\LoginPage.xaml",
+              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\LoginPage.xaml",
+              "RelativeToolTip": "DashboardApp\\Views\\LoginPage.xaml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAA0AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-19T16:47:11.962Z"
+              "WhenOpened": "2025-09-22T11:50:02.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AwsLambdaPage.xaml",
+              "DocumentMoniker": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\AwsLambdaPage.xaml",
+              "RelativeDocumentMoniker": "DashboardApp\\Views\\AwsLambdaPage.xaml",
+              "ToolTip": "D:\\androidprojects\\DashboardApp\\DashboardApp\\Views\\AwsLambdaPage.xaml",
+              "RelativeToolTip": "DashboardApp\\Views\\AwsLambdaPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-22T11:49:42.113Z"
             }
           ]
         }

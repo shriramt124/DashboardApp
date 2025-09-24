@@ -141,7 +141,7 @@ public class ShellViewModel : BaseViewModel
         if (ContentFrame == null) return;
 
         Type? pageType = GetPageType(pageTag);
-        
+        //if the source page type is not the same as the page type, navigate to the new page
         if (pageType != null && ContentFrame.SourcePageType != pageType)
         {
             ContentFrame.Navigate(pageType);
@@ -151,6 +151,7 @@ public class ShellViewModel : BaseViewModel
 
     private Type? GetPageType(string pageTag)
     {
+        //this function just return the page tag that we are using 
         return pageTag switch
         {
             // Dashboard pages
@@ -186,7 +187,7 @@ public class ShellViewModel : BaseViewModel
             "forensics_evidence" => typeof(ForensicsEvidencePage),
             "forensics_analysis" => typeof(ForensicsAnalysisPage),
             "forensics_reports" => typeof(ForensicsReportsPage),
-            
+            //default me home page return kar do 
             _ => typeof(HomePage)
         };
     }
